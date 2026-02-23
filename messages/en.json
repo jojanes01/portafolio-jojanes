@@ -1,0 +1,711 @@
+{
+  "Header": {
+    "menu": {
+      "projects": "Projects",
+      "experience": "Experience",
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "learning": "Learning",
+      "consult": "LET'S TALK"
+    },
+    "services": {
+      "custom-software-development": "Custom Software Development",
+      "seo": "SEO",
+      "cro": "CRO",
+      "digital-transformation": "Digital Transformation",
+      "business-intelligence": "Business Intelligence (BI)",
+      "consulting-support": "Consulting & Support"
+    }
+  },
+  "Hero": {
+    "mail": "mailto:jojanes011@gmail.com?subject=Let's%20work%20together",
+    "linkedin": "https://www.linkedin.com/in/jojanes/?locale=en_US",
+    "cv": "https://jojanes.com/docs/CV-JOAN-OVIEDO-ENGLISH.pdf",
+    "avatar": {
+      "alt": "Joan Oviedo",
+      "description": "Available for freelance work"
+    },
+    "headline": "Building impactful web experiences for global audiences.",
+    "subheadline": "With over 5 years of expertise, I bring innovation, adaptability, and a user-focused approach to every project.",
+    "buttons": {
+      "getStarted": "GET STARTED",
+      "viewPortfolio": "VIEW PORTFOLIO"
+    }
+  },
+  "Projects": {
+    "title": "Recent Projects",
+    "texts": {
+      "role": "Role",
+      "deliverables": "Deliverables",
+      "company": "Company",
+      "year": "Year",
+      "site": "Website"
+    },
+    "items": {
+      "globalStreaming": {
+        "name": "Global Streaming Community",
+        "description": "A groundbreaking platform connecting musicians with global audiences. Built with Next.js, Spring Boot, and PostgreSQL, the system enables artists to promote their tracks, analyze engagement, and grow their reach. Hosted on DigitalOcean, the project also includes a browser extension to automate playback and engagement.",
+        "role": "Fullstack Developer, Project Manager",
+        "deliverables": "Web Development, API Integration, Web Extension Development",
+        "company": "Freelance",
+        "year": "2024",
+        "visitSite": "Visit Site"
+      },
+      "paquetesMovistarPrepago": {
+        "name": "Movistar Prepaid Packages Col",
+        "description": "A high-performance platform designed to efficiently manage Movistar's prepaid packages, serving over 1 million monthly users. The platform enables users to seamlessly check, purchase, and manage data, minutes, and SMS packages. The project included a full migration from React to Next.js, enhancing performance and user experience. The frontend interacts with robust backend services built in Spring Boot and C#, ensuring real-time synchronization with Movistar's internal systems. Additionally, the platform is fully mapped in Google Analytics for detailed monitoring of user behavior, enabling data-driven strategic decisions.",
+        "role": "Front-End Developer, Migration Leader",
+        "deliverables": "Frontend in NextJS, Integration with Spring Boot and C# APIs, Full Mapping in Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2022 - 2024",
+        "visitSite": "Visit Site"
+      },
+      "concentreseMovistarPrepago": {
+        "name": "Concentrése Movistar Prepaid Col",
+        "description": "An interactive experience developed as part of a promotional campaign for Movistar Prepaid Colombia, aimed at attracting new customers and engaging existing ones. The game challenges users to match all pairs of cards in the shortest time possible to compete for an iPhone. Built with Next.js, the platform delivers optimal performance and a seamless user experience. The interface was thoughtfully designed to be mobile-friendly and visually engaging. The solution is hosted on Movistar's reliable infrastructure and fully integrated with Google Analytics to track performance and user engagement.",
+        "role": "Front-End Developer",
+        "deliverables": "Memory Game in NextJS, Google Analytics Integration",
+        "company": "Movistar - Telefónica",
+        "year": "2024",
+        "visitSite": "Visit Site"
+      },
+      "juridicosAsociados": {
+        "name": "Jurídicos Asociados",
+        "description": "A corporate website for Jurídicos Asociados, a law firm in Cali, Colombia. The website showcases information about legal services, the team of lawyers, and success cases. Developed with Next.js, the website ensures optimal performance and an intuitive user experience. The interface was designed to be professional and accessible on mobile devices. The solution is hosted on Jurídicos Asociados' infrastructure and fully integrated with Google Analytics to monitor performance and user engagement.",
+        "role": "Front-End Developer",
+        "deliverables": "NextJS Website, Google Analytics Mapping",
+        "company": "Jurídicos Asociados",
+        "year": "2024"
+      },
+      "abogadosCali": {
+        "name": "Abogados Cali",
+        "description": "A corporate website for Abogados Cali, a law firm in Cali, Colombia. The website showcases information about legal services, the team of lawyers, and success cases. Developed with Next.js, the website ensures optimal performance and an intuitive user experience. The interface was designed to be professional and accessible on mobile devices. The solution is hosted on Abogados Cali's infrastructure and fully integrated with Google Analytics to monitor performance and user engagement.",
+        "role": "Front-End Developer",
+        "deliverables": "NextJS Website, Google Analytics Mapping",
+        "company": "Abogados Cali",
+        "year": "2024"
+      },
+      "nutricionistaCamila": {
+        "name": "Nutricionista Camila Jimenez",
+        "description": "A client-acquisition-focused web portfolio for a professional nutritionist. The platform was built with Next.js and features an SEO-optimized blog powered by Sanity CMS for content marketing. A key deliverable was the 'Nutritional Directory,' a unique and fully customizable food repository, also managed via Sanity, to serve as a valuable resource for patients.",
+        "role": "Fullstack Developer & SEO Strategist",
+        "deliverables": "Next.js Portfolio, Sanity CMS Integration, SEO Blog Development, Custom Content Repository",
+        "company": "Freelance",
+        "year": "2025"
+      },
+      "jjsecurity": {
+        "name": "JJ Security",
+        "description": "A corporate website for JJ Security, a security company in Cali, Colombia. Beyond the initial Next.js development, a sophisticated SEO strategy combined with AI for content generation was implemented. This initiative successfully grew organic leads from nearly zero to over 100 per month, transforming a simple landing page and blog into the company's primary client acquisition channel.",
+        "role": "Front-End Developer & Lead Generation Strategist",
+        "deliverables": "NextJS Website, AI-Powered SEO Strategy, Lead Generation Funnel",
+        "company": "JJ Security",
+        "year": "2024"
+      },
+      "portfolioAlejandra": {
+        "name": "Alejandra's Portfolio",
+        "description": "Explore Alejandra's personal portfolio, a prominent Power Platform Developer from Cali, Colombia. The website highlights her professional journey, innovative projects, and expertise in business solutions using Microsoft tools. Designed with Next.js, the portfolio ensures exceptional performance, seamless navigation, and a mobile-optimized experience. Fully integrated with Google Analytics, this site offers a professional window into Alejandra's impact and skills in digital transformation.",
+        "role": "Front-End Developer and Power Platform Consultant",
+        "deliverables": "Dynamic website in Next.js, Google Analytics integration, SEO-optimized content",
+        "company": "Alejandra's Professional Portfolio",
+        "year": "2024"
+      }
+    }
+  },
+  "Testimonies": {
+    "title": "What others have to say",
+    "grace": {
+      "text": "Joan, excellent work! Thank you for taking on challenges with the best attitude and for believing that everything is possible 🙌🏽 Your motivation within the team inspires us to improve and grow. You are amazing 👊🏼 Joan Sebastian #recognition What would we do without you and your #greatteamwork?",
+      "name": "Grace Villaquiran",
+      "description": "Product Owner - Telefónica Colombia",
+      "avatar": "/images/testimonies/movistar.jpg"
+    },
+    "william": {
+      "text": "I want to express my heartfelt congratulations for the excellent work done in developing our website. Your dedication, professionalism, and attention to detail have exceeded our expectations. Every aspect of the design and functionality reflects an exceptional level of quality. I greatly appreciate your commitment and effort to understand our needs and translate them so creatively and effectively. It's evident that you put passion into what you do, and it shows in the final result. I would certainly recommend your services to anyone looking for high-quality work and professional treatment. Congratulations again on your performance, and thank you for such a well-done job!",
+      "name": "William Viera",
+      "description": "CEO - Global Streaming Community",
+      "avatar": "/images/testimonies/william.png"
+    },
+    "juan": {
+      "text": "Joan! I acknowledge the great work you have contributed to the team. Every challenge that comes your way has been handled and solved seamlessly. You have demonstrated remarkable professionalism and a strong sense of ownership with our company. Thank you for your excellent developments!",
+      "name": "Juan Ballesteros",
+      "description": "Senior Developer - Telefónica Colombia",
+      "avatar": "/images/testimonies/movistar.jpg"
+    },
+    "jorge": {
+      "text": "Working with you has been an exceptional experience. The websites for Jurídicos Asociados and Abogados Cali exceeded all our expectations, combining professional design with flawless functionality. Thanks to your dedication and vision, we now have platforms that perfectly reflect our identity and services.",
+      "name": "Jorge Cediel",
+      "description": "Lawyer - Jurídicos Asociados",
+      "avatar": "/images/testimonies/juridicos.webp"
+    },
+    "jairo": {
+      "text": "Joan is an exceptional professional who has transformed our online presence. The JJ Security website is now a powerful marketing tool that reflects our mission and values. His user-centered approach and ability to translate our ideas into effective digital solutions have been fundamental to the success of our business.",
+      "name": "Jairo Jimenez",
+      "description": "Owner - JJ Security Group",
+      "avatar": "/images/testimonies/jjsecurity.png"
+    }
+  },
+  "About": {
+    "title": "About",
+    "introduction": {
+      "headline": "I'm Joan Oviedo - a skilled web developer crafting impactful digital experiences from Cali, Colombia.",
+      "buttonText": "GET STARTED"
+    },
+    "description": {
+      "part1": "Hey there! I'm Joan Oviedo, a freelance web developer based in Cali, Colombia. With over 5 years of experience, I specialize in building dynamic and user-centered websites that leave a lasting impression. My expertise includes React, Next.js, and other modern technologies to bring your digital vision to life.",
+      "part2": "From sleek portfolios to robust applications, I ensure to exceed client expectations by delivering responsive, SEO-friendly, and high-performing websites. I prioritize understanding your goals to create solutions tailored to your needs.",
+      "part3": "Living in Cali, I draw inspiration from its vibrant culture and dynamic tech scene. Let's collaborate and bring your ideas to life through exceptional digital experiences!"
+    }
+  },
+  "Experience": {
+    "title": "Work Experience",
+    "items": {
+      "telefonica": {
+        "company": "Telefónica Colombia (through Stefanini, DISC IT, and VASS)",
+        "job": "Frontend Developer",
+        "date": "2022 - Present"
+      },
+      "indra": {
+        "company": "INDRA - ENAIRE",
+        "job": "Frontend Developer",
+        "date": "2022"
+      },
+      "prevalentware": {
+        "company": "Prevalentware SAS",
+        "job": "Fullstack Developer",
+        "date": "2021"
+      },
+      "grupoAfl": {
+        "company": "Grupo AFL",
+        "job": "Frontend Developer",
+        "date": "2020 - 2021"
+      },
+      "gemda": {
+        "company": "GEMDA",
+        "job": "Fullstack Developer",
+        "date": "2019 - 2020"
+      },
+      "elroble": {
+        "company": "El Roble",
+        "job": "Fullstack Developer",
+        "date": "2019"
+      }
+    }
+  },
+  "Skills": {
+    "title": "Skills",
+    "description": "Here, I showcase the tools and programming languages I work with. From React to TypeScript, each skill reflects my ability to deliver robust and dynamic digital solutions."
+  },
+  "Footer": {
+    "email": "jojanes011@gmail.com",
+    "usefulLinksTitle": "Useful links",
+    "usefulLinks": {
+      "home": "Home",
+      "projects": "Projects",
+      "testimonies": "Testimonies",
+      "experience": "Experience",
+      "skills": "Skills",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact",
+    "phone": "(+57) 318 447 1432",
+    "copyright": "© 2025 Jojanes. All rights reserved."
+  },
+  "Blog": {
+    "buttonAll": "View all articles",
+    "published": "Published on",
+    "notFound": "No articles found",
+    "by": "by",
+    "localeDate": "en-US"
+  },
+  "LastestBlog": {
+    "title": "Latest Articles",
+    "buttonAll": "View all articles",
+    "notFound": "No articles found"
+  },
+  "Mind": {
+    "title": "Have a Project in Mind?",
+    "description": "Let's discuss your ideas and bring them to life. Whether you're looking to build a website, web application, or digital experience, I'm here to help. Reach out to me today and let's get started!",
+    "button": "LET'S TALK"
+  },
+  "Services": {
+    "title": "Services",
+    "list": {
+      "button": "Free Consultation",
+      "titleUseCases": "Use Cases",
+      "titleBenefits": "Benefits for Your Business",
+      "titleProcess": "Our Process",
+      "titleFAQ": "Frequently Asked Questions",
+      "buttonStart": "Start Your Project Today",
+      "custom-software-development": {
+        "title": "Custom Software Development",
+        "description": "We create digital solutions tailored to your business needs.",
+        "details": "Custom software development enables the creation of applications and systems that perfectly align with your business operations and goals. We design specific tools to solve unique problems and optimize processes.",
+        "image": "software.webp",
+        "quote": "We transform your ideas into impactful digital solutions.",
+        "benefits": {
+          "benefit1": {
+            "title": "Automation of Internal Processes",
+            "description": "Optimize and automate your company's internal processes to improve efficiency."
+          },
+          "benefit2": {
+            "title": "Reduction in Operational Costs",
+            "description": "Reduce costs through personalized solutions that optimize resources."
+          },
+          "benefit3": {
+            "title": "Increased Productivity",
+            "description": "Boost productivity with tools specifically designed for your needs."
+          },
+          "benefit4": {
+            "title": "Competitive Advantage",
+            "description": "Gain a competitive edge with innovative technological solutions."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Process Automation",
+            "icon": "icon-[tabler--automation]",
+            "example": "We developed an inventory system that reduced errors by 30%."
+          },
+          "useCase2": {
+            "title": "System Integration",
+            "icon": "icon-[tabler--users]",
+            "example": "We created a custom CRM that improved customer retention by 50%."
+          },
+          "useCase3": {
+            "title": "Educational Platform",
+            "icon": "icon-[tabler--book]",
+            "example": "We designed a learning platform that increased student retention by 20%."
+          },
+          "useCase4": {
+            "title": "Data Analysis",
+            "icon": "tabler--icon-[chart-bar]",
+            "example": "We implemented an analytics system that enhanced strategic decisions by 40%."
+          }
+        },
+        "process": {
+          "step1": "Requirement Analysis",
+          "step2": "Solution Design",
+          "step3": "Agile Development",
+          "step4": "Testing and Quality Control",
+          "step5": "Implementation",
+          "step6": "Continuous Support"
+        },
+        "faq": {
+          "faq1": {
+            "question": "How long does it take to develop custom software?",
+            "answer": "Depending on the complexity, it can take between 3 to 12 months."
+          },
+          "faq2": {
+            "question": "Do you offer post-launch support?",
+            "answer": "Yes, we provide continuous support and updates."
+          },
+          "faq3": {
+            "question": "How much does custom software cost?",
+            "answer": "The cost varies depending on the specific needs of the project."
+          },
+          "faq4": {
+            "question": "Can the software scale in the future?",
+            "answer": "Yes, we design scalable solutions to adapt to your business growth."
+          }
+        }
+      },
+      "seo": {
+        "title": "SEO",
+        "description": "Increase your visibility on Google without paying for ads.",
+        "details": "SEO (Search Engine Optimization) improves your website's ranking on search engines, attracting more potential customers organically. We implement technical and content strategies to ensure your page is visible, relevant, and engaging for your audience.",
+        "image": "seo.webp",
+        "quote": "SEO doesn't just make you visible; it connects your brand with the right people.",
+        "benefits": {
+          "benefit1": {
+            "title": "Increased Website Traffic",
+            "description": "Boost organic traffic to your site through better search engine rankings."
+          },
+          "benefit2": {
+            "title": "Lead Generation",
+            "description": "Attract high-quality potential customers without the need for advertising investment."
+          },
+          "benefit3": {
+            "title": "Trust and Authority",
+            "description": "Build trust in your brand through a strong presence on search engines."
+          },
+          "benefit4": {
+            "title": "Long-Term Results",
+            "description": "Achieve sustainable benefits that continue to grow over time."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Local SEO for Physical Businesses",
+            "icon": "tabler--icon-[map-pin]",
+            "example": "We optimized a local restaurant’s website, increasing reservations by 40%."
+          },
+          "useCase2": {
+            "title": "SEO for e-Commerce",
+            "icon": "tabler--icon-[shopping-cart]",
+            "example": "We ranked an online store in the Top 3 for relevant keywords, boosting sales by 50%."
+          },
+          "useCase3": {
+            "title": "Technical SEO for Large Websites",
+            "icon": "icon-[tabler--server]",
+            "example": "We optimized the speed and architecture of a marketplace, increasing organic traffic by 30%."
+          },
+          "useCase4": {
+            "title": "Strategic Content Creation",
+            "icon": "icon-[tabler--book]",
+            "example": "We developed optimized content that increased time on page by 25%."
+          }
+        },
+        "process": {
+          "step1": "Technical and Content Audit",
+          "step2": "Keyword Research",
+          "step3": "On-Page Optimization",
+          "step4": "Off-Page Optimization",
+          "step5": "Content Creation",
+          "step6": "Continuous Monitoring and Adjustment"
+        },
+        "faq": {
+          "faq1": {
+            "question": "How long does it take to see results with SEO?",
+            "answer": "Results typically start appearing in 3 to 6 months, depending on the competition."
+          },
+          "faq2": {
+            "question": "Does SEO work for all types of businesses?",
+            "answer": "Yes, SEO is effective for almost any industry, adapting strategies to your goals."
+          },
+          "faq3": {
+            "question": "What tools do you use for SEO?",
+            "answer": "We use advanced tools like Google Analytics, SEMrush, and Ahrefs for analysis and optimization."
+          },
+          "faq4": {
+            "question": "What’s the difference between SEO and paid advertising?",
+            "answer": "SEO generates organic, sustainable results, while paid advertising offers immediate but short-term results."
+          }
+        }
+      },
+      "cro": {
+        "title": "CRO (Conversion Rate Optimization)",
+        "description": "Optimize your page to convert more visitors into customers.",
+        "details": "CRO (Conversion Rate Optimization) focuses on improving elements of your website to increase the number of visitors who perform desired actions, such as purchasing, signing up, or contacting you. We use testing, analysis, and strategic design to maximize the value of every visit to your site.",
+        "image": "cro.webp",
+        "quote": "Don't just attract traffic, convert it into loyal customers.",
+        "benefits": {
+          "benefit1": {
+            "title": "Increase in Conversions",
+            "description": "Improve the percentage of visitors performing key actions like purchases or sign-ups."
+          },
+          "benefit2": {
+            "title": "Enhanced User Experience",
+            "description": "Offer an optimized user experience that fosters engagement and trust."
+          },
+          "benefit3": {
+            "title": "Higher ROI",
+            "description": "Achieve better results with the same website traffic, maximizing return on investment."
+          },
+          "benefit4": {
+            "title": "Data-Driven Decisions",
+            "description": "Use advanced analytics to identify areas of improvement and strategic opportunities."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "A/B Testing on Product Pages",
+            "icon": "tabler--icon-[test-pipe]",
+            "example": "We tested different versions of a product page and achieved a 20% increase in sales."
+          },
+          "useCase2": {
+            "title": "Form Optimization",
+            "icon": "icon-[tabler--forms]",
+            "example": "We redesigned contact forms to reduce abandonment by 30%."
+          },
+          "useCase3": {
+            "title": "Landing Page Redesign",
+            "icon": "icon-[tabler--brand-html5]",
+            "example": "We created an optimized landing page that doubled newsletter subscriptions."
+          },
+          "useCase4": {
+            "title": "Conversion Funnel Analysis",
+            "icon": "tabler--icon-[chart-bar]",
+            "example": "We implemented a funnel analysis that identified bottlenecks and improved conversions by 25%."
+          }
+        },
+        "process": {
+          "step1": "User Behavior Analysis",
+          "step2": "Defining Conversion Goals",
+          "step3": "A/B and Multivariate Testing",
+          "step4": "Design and Content Optimization",
+          "step5": "Change Implementation",
+          "step6": "Continuous Monitoring and Improvement"
+        },
+        "faq": {
+          "faq1": {
+            "question": "What is CRO and why is it important?",
+            "answer": "CRO improves your website's conversion rate, maximizing the value of each visitor."
+          },
+          "faq2": {
+            "question": "How long does it take to see results with CRO?",
+            "answer": "Significant improvements are typically seen within 4 to 8 weeks of implementing changes."
+          },
+          "faq3": {
+            "question": "Is CRO suitable for any business?",
+            "answer": "Yes, any business looking to maximize its digital results can benefit from CRO."
+          },
+          "faq4": {
+            "question": "What tools do you use for CRO?",
+            "answer": "We use tools like Google Optimize, Hotjar, and Analytics for detailed testing and analysis."
+          }
+        }
+      },
+      "digital-transformation": {
+        "title": "Digital Transformation",
+        "description": "We digitize and modernize business processes.",
+        "details": "Digital transformation involves leveraging technology to enhance and modernize business processes, optimize resources, and deliver a better customer experience. From automation to advanced tools implementation, we transform how businesses operate and connect with their customers.",
+        "image": "digital.webp",
+        "quote": "Transform your business to adapt to the digital world.",
+        "benefits": {
+          "benefit1": {
+            "title": "Process Automation",
+            "description": "Digitize repetitive tasks to save time and resources."
+          },
+          "benefit2": {
+            "title": "Enhanced Customer Experience",
+            "description": "Provide your customers with a modern and seamless experience."
+          },
+          "benefit3": {
+            "title": "Resource Optimization",
+            "description": "Reduce costs and improve operational efficiency through technology."
+          },
+          "benefit4": {
+            "title": "Adaptability to Change",
+            "description": "Prepare for a digital future with modern tools."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Administrative Task Automation",
+            "icon": "icon-[tabler--robot]",
+            "example": "We implemented RPA to automate repetitive tasks, saving the team 20 hours weekly."
+          },
+          "useCase2": {
+            "title": "CRM Implementation",
+            "icon": "icon-[tabler--users]",
+            "example": "We developed a custom CRM that increased client retention by 40%."
+          },
+          "useCase3": {
+            "title": "Cloud Migration",
+            "icon": "tabler--icon-[cloud-upload]",
+            "example": "We helped a company migrate operations to the cloud, reducing infrastructure costs by 30%."
+          },
+          "useCase4": {
+            "title": "Data Analytics",
+            "icon": "tabler--icon-[chart-pie]",
+            "example": "We implemented an advanced analytics system to optimize strategic decisions."
+          }
+        },
+        "process": {
+          "step1": "Assessment of Digital Needs",
+          "step2": "Design of Digital Strategy",
+          "step3": "Selection and Implementation of Technologies",
+          "step4": "Automation and Optimization",
+          "step5": "Team Training",
+          "step6": "Continuous Monitoring and Updates"
+        },
+        "faq": {
+          "faq1": {
+            "question": "What is digital transformation?",
+            "answer": "It is the process of modernizing business processes with advanced technology."
+          },
+          "faq2": {
+            "question": "What types of businesses can undergo digital transformation?",
+            "answer": "Any business, regardless of size, can benefit from digital transformation."
+          },
+          "faq3": {
+            "question": "How long does digital transformation take?",
+            "answer": "The timeline varies based on the project scope, ranging from weeks to months."
+          },
+          "faq4": {
+            "question": "How does digital transformation impact costs?",
+            "answer": "It reduces long-term costs by optimizing resources and improving operational efficiency."
+          }
+        }
+      },
+      "business-intelligence": {
+        "title": "Business Intelligence (BI)",
+        "description": "Turn data into strategic decisions.",
+        "details": "Business Intelligence (BI) enables the transformation of data into valuable insights that drive strategic decisions. By integrating advanced analytics tools and customized reports, we help businesses identify opportunities, predict trends, and optimize performance in real-time.",
+        "image": "bi.webp",
+        "quote": "Turn your data into the engine for strategic decisions.",
+        "benefits": {
+          "benefit1": {
+            "title": "Data-driven decision-making",
+            "description": "Access real-time insights to make more accurate and faster decisions."
+          },
+          "benefit2": {
+            "title": "Opportunity identification",
+            "description": "Detect trends and opportunities before your competitors."
+          },
+          "benefit3": {
+            "title": "Resource optimization",
+            "description": "Maximize resource utilization through efficient data analysis."
+          },
+          "benefit4": {
+            "title": "Improved performance",
+            "description": "Boost productivity by basing your strategies on clear and reliable information."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Sales analysis",
+            "icon": "tabler--icon-[chart-line]",
+            "example": "We developed dashboards that enabled a retailer to increase sales by 25% by identifying top-selling products."
+          },
+          "useCase2": {
+            "title": "Inventory optimization",
+            "icon": "icon-[tabler--building-warehouse]",
+            "example": "We implemented BI to predict demand, reducing storage costs by 30%."
+          },
+          "useCase3": {
+            "title": "Financial reporting",
+            "icon": "icon-[tabler--cash]",
+            "example": "We created customized financial reports that facilitated real-time budget management."
+          },
+          "useCase4": {
+            "title": "Customer analysis",
+            "icon": "icon-[tabler--users]",
+            "example": "We designed a customer behavior analysis system, increasing retention by 40%."
+          }
+        },
+        "process": {
+          "step1": "Defining objectives and key metrics",
+          "step2": "Data collection and cleaning",
+          "step3": "Designing dashboards and reports",
+          "step4": "BI tools implementation",
+          "step5": "Team training",
+          "step6": "Continuous monitoring and adjustments"
+        },
+        "faq": {
+          "faq1": {
+            "question": "What is Business Intelligence?",
+            "answer": "It is the process of analyzing data to obtain valuable insights and make strategic decisions."
+          },
+          "faq2": {
+            "question": "What tools do you use for BI implementation?",
+            "answer": "We work with tools like Power BI, Tableau, and Google Data Studio, among others."
+          },
+          "faq3": {
+            "question": "How long does it take to implement a BI solution?",
+            "answer": "It depends on complexity, but typically between 1 and 3 months."
+          },
+          "faq4": {
+            "question": "Is prior experience necessary to use BI?",
+            "answer": "No, we provide training to ensure your team can effectively use the tools."
+          }
+        }
+      },
+      "consulting-support": {
+        "title": "Consulting, Support, and Maintenance",
+        "description": "Optimize and keep your systems always available.",
+        "details": "Our consulting, support, and maintenance service is designed to ensure your systems operate optimally and adapt to the changing needs of your business. From technical diagnostics to continuous updates, we make sure your tech infrastructure is reliable and scalable.",
+        "image": "consulting.webp",
+        "quote": "Your technology, always ready for success.",
+        "benefits": {
+          "benefit1": {
+            "title": "Maximization of uptime",
+            "description": "We ensure your systems are available with minimal interruptions."
+          },
+          "benefit2": {
+            "title": "Reduced maintenance costs",
+            "description": "Preventive solutions minimize repair expenses and unplanned downtimes."
+          },
+          "benefit3": {
+            "title": "Improved system performance",
+            "description": "We optimize configurations and performance to ensure your systems run at their best."
+          },
+          "benefit4": {
+            "title": "Expert advice",
+            "description": "Receive technical guidance to align technology with your strategic goals."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Preventive diagnostics",
+            "icon": "tabler--icon-[shield-check]",
+            "example": "We implemented regular diagnostics that reduced system failures by 40%."
+          },
+          "useCase2": {
+            "title": "Continuous updates",
+            "icon": "icon-[tabler--refresh]",
+            "example": "We developed an update plan for an ERP system, improving its performance by 30%."
+          },
+          "useCase3": {
+            "title": "Disaster recovery",
+            "icon": "tabler--icon-[cloud-off]",
+            "example": "We designed a recovery plan that enabled a company to resume operations in less than 2 hours after a crash."
+          },
+          "useCase4": {
+            "title": "Server optimization",
+            "icon": "icon-[tabler--server]",
+            "example": "We reconfigured servers, increasing a website's load speed by 50%."
+          }
+        },
+        "process": {
+          "step1": "Initial system evaluation",
+          "step2": "Maintenance planning",
+          "step3": "Implementation of improvements",
+          "step4": "24/7 technical support",
+          "step5": "Continuous monitoring",
+          "step6": "Periodic review and optimization"
+        },
+        "faq": {
+          "faq1": {
+            "question": "What does the support service include?",
+            "answer": "It includes monitoring, incident resolution, updates, and continuous technical support."
+          },
+          "faq2": {
+            "question": "Can you work with legacy systems?",
+            "answer": "Yes, we offer support for both modern and legacy systems."
+          },
+          "faq3": {
+            "question": "Do you offer customized maintenance plans?",
+            "answer": "Yes, we tailor our services to your business's specific needs."
+          },
+          "faq4": {
+            "question": "How long does it take to implement a maintenance plan?",
+            "answer": "The initial implementation can take between 1 to 3 weeks, depending on the system's complexity."
+          }
+        }
+      }
+    }
+  },
+  "Metadata": {
+    "index": {
+      "title": "Joan Oviedo - Freelance Web Developer in Cali, Colombia",
+      "description": "Freelance web developer based in Cali, Colombia, specializing in creating impactful digital experiences. With over 5 years of experience, I offer web development, SEO, CRO, digital transformation, and more."
+    },
+    "services": {
+      "title": "Services | Web Development & SEO - Joan Oviedo",
+      "description": "We offer custom software development, SEO optimization, digital transformation, and technology consulting for businesses and entrepreneurs."
+    },
+    "services_custom_software": {
+      "title": "Custom Software Development | Joan Oviedo",
+      "description": "We create custom applications tailored to your needs. Improve efficiency and transform your business with innovative technological solutions."
+    },
+    "services_seo": {
+      "title": "SEO | Search Engine Optimization - Joan Oviedo",
+      "description": "Increase your visibility on Google with advanced SEO strategies. We help position your business at the top search results and improve your website traffic."
+    },
+    "projects": {
+      "title": "Featured Projects - Joan Oviedo",
+      "description": "Explore my featured projects, from corporate websites to interactive applications. With a focus on user-centered design and optimal performance, each project reflects my passion for creating exceptional digital experiences."
+    },
+    "blog": {
+      "title": "Blog | Web Development & SEO Articles - Joan Oviedo",
+      "description": "Discover articles on web development trends, SEO, performance optimization, and digital strategies to boost your business."
+    }
+  },
+  "Learning": {
+    "title": "My <p>Learning</p> Universe",
+    "description": "A constellation of my achievements and studies. Pass your mouse to see the connections and click to explore."
+  }
+}

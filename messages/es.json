@@ -1,0 +1,736 @@
+{
+  "Header": {
+    "menu": {
+      "projects": "Proyectos",
+      "experience": "Experiencia",
+      "about": "Acerca de",
+      "services": "Servicios",
+      "blog": "Blog",
+      "learning": "Aprendizaje",
+      "consult": "CONSULTAR"
+    },
+    "services": {
+      "custom-software-development": "Desarrollo de Software a la Medida",
+      "seo": "SEO",
+      "cro": "CRO",
+      "digital-transformation": "Transformación Digital",
+      "business-intelligence": "Business Intelligence (BI)",
+      "consulting-support": "Consultoría, Soporte y Mantenimiento"
+    }
+  },
+  "Hero": {
+    "mail": "mailto:jojanes011@gmail.com?subject=Trabajemos%20juntos",
+    "linkedin": "https://www.linkedin.com/in/jojanes",
+    "cv": "https://jojanes.com/docs/CV-JOAN-OVIEDO-ESPAÑOL.pdf",
+    "avatar": {
+      "alt": "Joan Oviedo",
+      "description": "Disponible para trabajo freelance"
+    },
+    "headline": "Creando experiencias web impactantes para audiencias globales.",
+    "subheadline": "Con más de 5 años de experiencia, aporto innovación, adaptabilidad y un enfoque centrado en el usuario a cada proyecto.",
+    "buttons": {
+      "getStarted": "EMPEZAR",
+      "viewPortfolio": "VER PORTAFOLIO"
+    }
+  },
+  "Projects": {
+    "title": "Proyectos Recientes",
+    "texts": {
+      "role": "Rol",
+      "deliverables": "Entregables",
+      "company": "Empresa",
+      "year": "Año",
+      "site": "Sitio Web",
+      "visitSite": "Visitar Sitio"
+    },
+    "items": {
+      "globalStreaming": {
+        "name": "Global Streaming Community",
+        "description": "Una plataforma innovadora que conecta músicos con audiencias globales. Construida con Next.js, Spring Boot y PostgreSQL, el sistema permite a los artistas promocionar sus pistas, analizar el compromiso y expandir su alcance. Alojado en DigitalOcean, el proyecto también incluye una extensión de navegador para automatizar la reproducción y el compromiso.",
+        "role": "Desarrollador Fullstack, Project Manager",
+        "deliverables": "Desarrollo Web, Integración API, Desarrollo de Extensión Web",
+        "company": "Freelance",
+        "year": "2024"
+      },
+      "paquetesMovistarPrepago": {
+        "name": "Paquetes Movistar Prepago Col",
+        "description": "Una plataforma de alto rendimiento diseñada para la gestión eficiente de paquetes prepago de Movistar, permitiendo a más de 1 millón de usuarios mensuales consultar, comprar y gestionar paquetes de datos, minutos y SMS de manera sencilla e intuitiva. El proyecto incluyó la migración completa de React a Next.js para mejorar el rendimiento y la experiencia de usuario. El frontend interactúa con servicios backend robustos desarrollados en Spring Boot y C#, asegurando sincronización en tiempo real con los sistemas internos de Movistar. Además, la plataforma está completamente mapeada en Google Analytics para un monitoreo detallado del comportamiento de los usuarios, impulsando decisiones estratégicas basadas en datos.",
+        "role": "Desarrollador Front-End, Líder de Migración",
+        "deliverables": "Frontend en NextJS, Integración con APIs de Spring Boot y C#, Mapeo completo en Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2022 - 2024"
+      },
+      "concentreseMovistarPrepago": {
+        "name": "Concentrése Movistar Prepago Col",
+        "description": "Una experiencia interactiva diseñada como parte de una mecánica promocional para Movistar Prepago Colombia, cuyo objetivo era atraer nuevos clientes y fidelizar a los existentes. El juego consiste en un desafío de memoria donde los usuarios deben emparejar todas las cartas en el menor tiempo posible para competir por un iPhone. Desarrollada con Next.js, la plataforma ofrece un rendimiento óptimo y una experiencia de usuario fluida. La interfaz fue cuidadosamente diseñada para ser atractiva y compatible con dispositivos móviles. La solución está alojada en infraestructura confiable de Movistar y completamente integrada con Google Analytics para rastrear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Juego de Memoria en NextJS, Mapeo en Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2024"
+      },
+      "prepagoMovistarPrepago": {
+        "name": "Prepago Movistar Prepago Col",
+        "description": "Una plataforma de consulta de saldo y recargas para usuarios prepago de Movistar Colombia. La solución permite a los usuarios verificar su saldo, recargar su línea y consultar promociones vigentes. Desarrollada con Next.js, la plataforma garantiza un rendimiento óptimo y una experiencia de usuario intuitiva. La interfaz fue diseñada para ser amigable y accesible desde dispositivos móviles. La solución está alojada en la infraestructura de Movistar y completamente integrada con Google Analytics para monitorear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Consulta de Saldo y Recargas en NextJS, Mapeo en Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2024"
+      },
+      "triviaMovistarPrepago": {
+        "name": "Trivia Movistar Prepago Col",
+        "description": "Una trivia interactiva desarrollada como parte de una campaña promocional para Movistar Prepago Colombia, con el objetivo de atraer nuevos clientes y fidelizar a los existentes. El juego desafía a los usuarios a responder preguntas sobre la marca y los servicios de Movistar para ganar premios. Construida con Next.js, la plataforma ofrece un rendimiento óptimo y una experiencia de usuario fluida. La interfaz fue diseñada para ser atractiva y compatible con dispositivos móviles. La solución está alojada en infraestructura confiable de Movistar y completamente integrada con Google Analytics para rastrear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Trivia en NextJS, Mapeo en Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2024"
+      },
+      "referidosMovistarPrepago": {
+        "name": "Referidos Movistar Prepago Col",
+        "description": "Una plataforma de referidos para usuarios prepago de Movistar Colombia. La solución permite a los usuarios invitar a amigos a unirse a Movistar y recibir beneficios exclusivos. Desarrollada con Next.js, la plataforma garantiza un rendimiento óptimo y una experiencia de usuario intuitiva. La interfaz fue diseñada para ser amigable y accesible desde dispositivos móviles. La solución está alojada en la infraestructura de Movistar y completamente integrada con Google Analytics para monitorear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Plataforma de Referidos en NextJS, Mapeo en Google Analytics",
+        "company": "Movistar - Telefónica",
+        "year": "2024"
+      },
+      "juridicosAsociados": {
+        "name": "Jurídicos Asociados",
+        "description": "Un sitio web corporativo para Jurídicos Asociados, un bufete de abogados en Cali, Colombia. El sitio web presenta información sobre los servicios legales, el equipo de abogados y los casos de éxito. Desarrollado con Next.js, el sitio web garantiza un rendimiento óptimo y una experiencia de usuario intuitiva. La interfaz fue diseñada para ser profesional y accesible desde dispositivos móviles. La solución está alojada en la infraestructura de Jurídicos Asociados y completamente integrada con Google Analytics para monitorear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Sitio Web en NextJS, Mapeo en Google Analytics",
+        "company": "Jurídicos Asociados",
+        "year": "2024"
+      },
+      "abogadosCali": {
+        "name": "Abogados Cali",
+        "description": "Un sitio web corporativo para Abogados Cali, un bufete de abogados en Cali, Colombia. El sitio web presenta información sobre los servicios legales, el equipo de abogados y los casos de éxito. Desarrollado con Next.js, el sitio web garantiza un rendimiento óptimo y una experiencia de usuario intuitiva. La interfaz fue diseñada para ser profesional y accesible desde dispositivos móviles. La solución está alojada en la infraestructura de Abogados Cali y completamente integrada con Google Analytics para monitorear el rendimiento y la participación de los usuarios.",
+        "role": "Desarrollador Front-End",
+        "deliverables": "Sitio Web en NextJS, Mapeo en Google Analytics",
+        "company": "Abogados Cali",
+        "year": "2024"
+      },
+      "nutricionistaCamila": {
+        "name": "Nutricionista Camila Jimenez",
+        "description": "Un portafolio web enfocado en la captación de clientes para una nutricionista profesional. La plataforma fue desarrollada con Next.js e incluye un blog optimizado para SEO, gestionado con Sanity CMS para marketing de contenidos. Un entregable clave fue el 'Directorio Nutricional', un repositorio de alimentos único y totalmente personalizable, también administrado mediante Sanity, que sirve como recurso valioso para los pacientes.",
+        "role": "Desarrollador Fullstack y Estratega SEO",
+        "deliverables": "Portafolio en Next.js, Integración con Sanity CMS, Desarrollo de Blog SEO, Repositorio de Contenidos Personalizado",
+        "company": "Freelance",
+        "year": "2025"
+      },
+      "jjsecurity": {
+        "name": "JJ Security",
+        "description": "A corporate website for JJ Security, a security company in Cali, Colombia. Beyond the initial Next.js development, a sophisticated SEO strategy combined with AI for content generation was implemented. This initiative successfully grew organic leads from nearly zero to over 100 per month, transforming a simple landing page and blog into the company's primary client acquisition channel.",
+        "role": "Front-End Developer & Lead Generation Strategist",
+        "deliverables": "NextJS Website, AI-Powered SEO Strategy, Lead Generation Funnel",
+        "company": "JJ Security",
+        "year": "2024"
+      },
+      "portfolioAlejandra": {
+        "name": "Portafolio de Alejandra",
+        "description": "Explora el portafolio personal de Alejandra, una destacada Power Platform Developer de Cali, Colombia. El sitio web muestra su trayectoria profesional, proyectos innovadores y experiencia en soluciones empresariales con herramientas de Microsoft. Diseñado con Next.js, el portafolio garantiza un rendimiento excepcional, navegación fluida y una experiencia optimizada para dispositivos móviles. Con integración completa a Google Analytics, este sitio ofrece una ventana profesional hacia el impacto y las habilidades de Alejandra en la transformación digital.",
+        "role": "Desarrollador Front-End y Consultor de Power Platform",
+        "deliverables": "Sitio web dinámico en Next.js, integración con Google Analytics, contenido optimizado para SEO",
+        "company": "Portafolio Profesional de Alejandra",
+        "year": "2024"
+      }
+    }
+  },
+  "Testimonies": {
+    "title": "Lo que otros opinan",
+    "grace": {
+      "text": "Joan excelente trabajo! Gracias por asumir los retos con la mejor actitud, por creer que todo es posible 🙌🏽 tu motivación dentro del equipo nos inspira a mejorar y a crecer, eres grande 👊🏼 Joan Sebastian #reconocimiento ¿Qué haríamos sin ti y tu #grantrabajoenequipo?",
+      "name": "Grace Villaquiran",
+      "description": "Product Owner - Telefónica Colombia",
+      "avatar": "/images/testimonies/movistar.jpg"
+    },
+    "william": {
+      "text": "Quiero expresar mi más sincera felicitación por el excelente trabajo realizado en el desarrollo de nuestra página web. La dedicación, profesionalismo y atención al detalle han superado nuestras expectativas. Cada aspecto del diseño y la funcionalidad refleja un nivel de calidad excepcional. Agradezco enormemente tu compromiso y esfuerzo por entender nuestras necesidades y plasmarlas de manera tan creativa y eficaz. Es evidente que pones pasión en lo que haces, y eso se refleja en el resultado final. Recomendaría sin duda tus servicios a cualquiera que busque un trabajo de alta calidad y un trato profesional. ¡Felicitaciones nuevamente por tu desempeño y gracias por un trabajo tan bien hecho!",
+      "name": "William Viera",
+      "description": "CEO - Global Streaming Community",
+      "avatar": "/images/testimonies/william.png"
+    },
+    "juan": {
+      "text": "¡Joan! Reconozco el gran trabajo que has aportado al equipo, cada reto que llega a tus manos lo has sabido afrontar y lo has solucionado sin problemas, has demostrado un gran profesionalismo y un sentido de pertenencia enorme con nuestra compañía. Gracias por tus excelentes desarrollos!",
+      "name": "Juan Ballesteros",
+      "description": "Desarrollador Senior - Telefónica Colombia",
+      "avatar": "/images/testimonies/movistar.jpg"
+    },
+    "jorge": {
+      "text": "Trabajar contigo ha sido una experiencia excepcional. Las páginas web de Jurídicos Asociados y Abogados Cali superaron todas nuestras expectativas, combinando diseño profesional con funcionalidad impecable. Gracias a tu dedicación y visión, ahora contamos con plataformas que reflejan perfectamente nuestra identidad y servicios",
+      "name": "Jorge Cediel",
+      "description": "Abogado - Jurídicos Asociados",
+      "avatar": "/images/testimonies/juridicos.webp"
+    },
+    "jairo": {
+      "text": "Joan es un profesional excepcional que ha transformado nuestra presencia en línea. El sitio web de JJ Security es ahora una poderosa herramienta de marketing que refleja nuestra misión y valores. Su enfoque centrado en el usuario y su habilidad para traducir nuestras ideas en soluciones digitales efectivas han sido fundamentales para el éxito de nuestro negocio.",
+      "name": "Jairo Jimenez",
+      "description": "Dueño - JJ Security Group",
+      "avatar": "/images/testimonies/jjsecurity.png"
+    }
+  },
+  "About": {
+    "title": "Acerca de",
+    "introduction": {
+      "headline": "Soy Joan Oviedo - un desarrollador web especializado en crear experiencias digitales impactantes desde Cali, Colombia.",
+      "buttonText": "EMPEZAR"
+    },
+    "description": {
+      "part1": "¡Hola! Soy Joan Oviedo, un desarrollador web freelance ubicado en Cali, Colombia. Con más de 5 años de experiencia, me especializo en construir sitios web dinámicos y centrados en el usuario que dejan una impresión duradera. Mi experiencia incluye React, Next.js y otras tecnologías modernas para dar vida a tu visión digital.",
+      "part2": "Desde portafolios elegantes hasta aplicaciones robustas, me aseguro de superar las expectativas del cliente al entregar sitios web responsivos, optimizados para SEO y de alto rendimiento. Priorizo comprender tus objetivos para crear soluciones adaptadas a tus necesidades.",
+      "part3": "Viviendo en Cali, encuentro inspiración en su cultura vibrante y su dinámica escena tecnológica. ¡Colaboremos y hagamos realidad tus ideas a través de experiencias digitales excepcionales!"
+    }
+  },
+  "Experience": {
+    "title": "Experiencia Laboral",
+    "items": {
+      "telefonica": {
+        "company": "Telefónica Colombia (a través de Stefanini, DISC IT y VASS)",
+        "job": "Desarrollador Frontend",
+        "date": "2022 - Presente"
+      },
+      "indra": {
+        "company": "INDRA - ENAIRE",
+        "job": "Desarrollador Frontend",
+        "date": "2022"
+      },
+      "prevalentware": {
+        "company": "Prevalentware SAS",
+        "job": "Desarrollador Fullstack",
+        "date": "2021"
+      },
+      "grupoAfl": {
+        "company": "Grupo AFL",
+        "job": "Desarrollador Frontend",
+        "date": "2020 - 2021"
+      },
+      "gemda": {
+        "company": "GEMDA",
+        "job": "Desarrollador Fullstack",
+        "date": "2019 - 2020"
+      },
+      "elroble": {
+        "company": "El Roble",
+        "job": "Desarrollador Fullstack",
+        "date": "2019"
+      }
+    }
+  },
+  "Skills": {
+    "title": "Habilidades",
+    "description": "Aquí muestro las herramientas y lenguajes de programación con los que trabajo. Desde React hasta TypeScript, cada habilidad refleja mi capacidad para entregar soluciones digitales robustas y dinámicas."
+  },
+  "Footer": {
+    "email": "jojanes011@gmail.com",
+    "usefulLinksTitle": "Enlaces útiles",
+    "usefulLinks": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "testimonies": "Testimonios",
+      "experience": "Experiencia",
+      "skills": "Habilidades",
+      "about": "Acerca de",
+      "contact": "Contacto"
+    },
+    "contactTitle": "Contacto",
+    "phone": "(+57) 318 447 1432",
+    "copyright": "© 2025 Jojanes. Todos los derechos reservados."
+  },
+  "Blog": {
+    "buttonAll": "Ver todos los artículos",
+    "published": "Publicado el",
+    "notFound": "No se encontraron artículos",
+    "by": "por",
+    "localeDate": "es-ES"
+  },
+  "LastestBlog": {
+    "title": "Últimos Artículos",
+    "buttonAll": "Ver todos los artículos",
+    "published": "Publicado el",
+    "notFound": "No se encontraron artículos",
+    "by": "por",
+    "localeDate": "es-ES"
+  },
+  "Mind": {
+    "title": "¿Tienes algún proyecto en mente?",
+    "description": "¡Hablemos! Estoy disponible para colaborar en proyectos web emocionantes y desafiantes. Desde el diseño hasta el desarrollo, estoy aquí para ayudarte a llevar tu visión digital al siguiente nivel. ¡Contáctame hoy y comencemos a trabajar juntos!",
+    "button": "CONTACTAR"
+  },
+  "Services": {
+    "title": "Servicios",
+    "list": {
+      "button": "Consulta Gratuita",
+      "titleUseCases": "Casos de Uso",
+      "titleBenefits": "Beneficios para su Empresa",
+      "titleProcess": "Nuestro Proceso",
+      "titleFAQ": "Preguntas Frecuentes",
+      "buttonStart": "Comienza tu Proyecto Hoy",
+      "custom-software-development": {
+        "title": "Desarrollo de Software a la Medida",
+        "description": "Creamos soluciones digitales adaptadas a las necesidades de tu empresa.",
+        "details": "El desarrollo de software a medida permite crear aplicaciones y sistemas que se ajustan perfectamente a las operaciones y objetivos de tu negocio. Diseñamos herramientas específicas para resolver problemas únicos y optimizar procesos.",
+        "quote": "Transformamos tus ideas en soluciones digitales de impacto.",
+        "image": "software.webp",
+        "benefits": {
+          "benefit1": {
+            "title": "Automatización de procesos internos",
+            "description": "Optimiza y automatiza los procesos internos de tu empresa para mejorar la eficiencia."
+          },
+          "benefit2": {
+            "title": "Reducción de costos operativos",
+            "description": "Disminuye costos mediante soluciones personalizadas que optimizan recursos."
+          },
+          "benefit3": {
+            "title": "Aumento de la productividad",
+            "description": "Incrementa la productividad con herramientas diseñadas específicamente para tus necesidades."
+          },
+          "benefit4": {
+            "title": "Ventaja competitiva",
+            "description": "Obtén una ventaja competitiva con soluciones tecnológicas innovadoras."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Automatización de procesos",
+            "icon": "icon-[tabler--automation]",
+            "example": "Creamos un sistema de inventarios que redujo errores en un 30%."
+          },
+          "useCase2": {
+            "title": "Integración de sistemas",
+            "icon": "icon-[tabler--users]",
+            "example": "Desarrollamos un CRM personalizado que mejoró la retención de clientes en un 50%."
+          },
+          "useCase3": {
+            "title": "Plataforma educativa",
+            "icon": "icon-[tabler--book]",
+            "example": "Diseñamos una plataforma de aprendizaje que aumentó la retención estudiantil en un 20%."
+          },
+          "useCase4": {
+            "title": "Análisis de datos",
+            "icon": "icon-[tabler--chart-bar]",
+            "example": "Implementamos un sistema analítico que incrementó las decisiones estratégicas en un 40%."
+          }
+        },
+        "process": {
+          "step1": "Análisis de requerimientos",
+          "step2": "Diseño de la solución",
+          "step3": "Desarrollo ágil",
+          "step4": "Pruebas y control de calidad",
+          "step5": "Implementación",
+          "step6": "Soporte continuo"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Cuánto tiempo toma desarrollar un software a medida?",
+            "answer": "Dependiendo de la complejidad, entre 3 a 12 meses."
+          },
+          "faq2": {
+            "question": "¿Incluyen soporte post-lanzamiento?",
+            "answer": "Sí, ofrecemos soporte continuo y actualizaciones."
+          },
+          "faq3": {
+            "question": "¿Cuánto cuesta un software a medida?",
+            "answer": "El costo varía dependiendo de las necesidades específicas del proyecto."
+          },
+          "faq4": {
+            "question": "¿El software puede escalarse en el futuro?",
+            "answer": "Sí, diseñamos soluciones escalables para adaptarse al crecimiento de tu negocio."
+          }
+        }
+      },
+      "seo": {
+        "title": "SEO",
+        "description": "Aumenta tu visibilidad en Google sin pagar publicidad.",
+        "details": "El SEO (Optimización para Motores de Búsqueda) mejora el posicionamiento de tu sitio web en los motores de búsqueda, atrayendo más clientes potenciales de manera orgánica. Implementamos estrategias técnicas y de contenido para garantizar que tu página sea visible, relevante y atractiva para tu audiencia.",
+        "image": "seo.webp",
+        "quote": "El SEO no solo te hace visible, sino que conecta tu marca con las personas adecuadas.",
+        "benefits": {
+          "benefit1": {
+            "title": "Mayor Tráfico Web",
+            "description": "Incrementa el tráfico orgánico hacia tu sitio web mediante una mejor posición en los resultados de búsqueda."
+          },
+          "benefit2": {
+            "title": "Generación de Leads",
+            "description": "Atrae clientes potenciales de calidad sin necesidad de inversión en publicidad."
+          },
+          "benefit3": {
+            "title": "Confianza y Autoridad",
+            "description": "Aumenta la confianza en tu marca a través de una sólida presencia en los motores de búsqueda."
+          },
+          "benefit4": {
+            "title": "Resultados a Largo Plazo",
+            "description": "Obtén beneficios sostenibles que continúan creciendo con el tiempo."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "SEO Local para Negocios Físicos",
+            "icon": "icon-[tabler--map-pin]",
+            "example": "Optimizamos la página de un restaurante local, logrando un aumento del 40% en reservas."
+          },
+          "useCase2": {
+            "title": "SEO para e-Commerce",
+            "icon": "icon-[tabler--shopping-cart]",
+            "example": "Logramos posicionar una tienda online en el Top 3 para palabras clave relevantes, aumentando las ventas en un 50%."
+          },
+          "useCase3": {
+            "title": "SEO Técnico para Grandes Sitios Web",
+            "icon": "icon-[tabler--server]",
+            "example": "Optimizamos la velocidad y arquitectura de un marketplace, incrementando el tráfico orgánico en un 30%."
+          },
+          "useCase4": {
+            "title": "Creación de Contenido Estratégico",
+            "icon": "icon-[tabler--book]",
+            "example": "Desarrollamos contenido optimizado que aumentó el tiempo en página en un 25%."
+          }
+        },
+        "process": {
+          "step1": "Auditoría Técnica y de Contenido",
+          "step2": "Investigación de Palabras Clave",
+          "step3": "Optimización On-Page",
+          "step4": "Optimización Off-Page",
+          "step5": "Creación de Contenido",
+          "step6": "Monitoreo y Ajuste Continuo"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Cuánto tiempo toma ver resultados con SEO?",
+            "answer": "Generalmente se empiezan a ver resultados en 3 a 6 meses, dependiendo de la competencia."
+          },
+          "faq2": {
+            "question": "¿El SEO funciona para todos los tipos de negocios?",
+            "answer": "Sí, el SEO es efectivo para casi cualquier industria, adaptando la estrategia a tus objetivos."
+          },
+          "faq3": {
+            "question": "¿Qué herramientas utilizan para SEO?",
+            "answer": "Utilizamos herramientas avanzadas como Google Analytics, SEMrush, y Ahrefs para análisis y optimización."
+          },
+          "faq4": {
+            "question": "¿Qué diferencia al SEO de la publicidad paga?",
+            "answer": "El SEO genera resultados orgánicos y sostenibles, mientras que la publicidad paga ofrece resultados inmediatos pero a corto plazo."
+          }
+        }
+      },
+      "cro": {
+        "title": "CRO (Optimización de la Tasa de Conversión)",
+        "description": "Optimiza tu página para convertir más visitas en clientes.",
+        "details": "El CRO (Optimización de la Tasa de Conversión) se enfoca en mejorar los elementos de tu sitio web para aumentar la cantidad de visitantes que realizan una acción deseada, como comprar, registrarse o contactar. Utilizamos pruebas, análisis y diseño estratégico para maximizar el valor de cada visita a tu sitio.",
+        "image": "cro.webp",
+        "quote": "No solo atraigas tráfico, conviértelo en clientes fieles.",
+        "benefits": {
+          "benefit1": {
+            "title": "Incremento en Conversiones",
+            "description": "Mejora la proporción de visitantes que realizan acciones clave, como compras o registros."
+          },
+          "benefit2": {
+            "title": "Experiencia del Usuario Mejorada",
+            "description": "Ofrece a tus usuarios una experiencia optimizada que fomente su interacción y confianza."
+          },
+          "benefit3": {
+            "title": "Mayor ROI",
+            "description": "Obtén más resultados con el mismo tráfico web, maximizando el retorno de inversión."
+          },
+          "benefit4": {
+            "title": "Toma de Decisiones Basada en Datos",
+            "description": "Usa análisis avanzados para identificar áreas de mejora y oportunidades estratégicas."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Pruebas A/B en Páginas de Producto",
+            "icon": "icon-[tabler--test-pipe]",
+            "example": "Probamos diferentes versiones de una página de producto y logramos un aumento del 20% en ventas."
+          },
+          "useCase2": {
+            "title": "Optimización de Formularios",
+            "icon": "icon-[tabler--forms]",
+            "example": "Rediseñamos formularios de contacto para reducir el abandono en un 30%."
+          },
+          "useCase3": {
+            "title": "Rediseño de Páginas de Aterrizaje",
+            "icon": "icon-[tabler--brand-html5]",
+            "example": "Creamos una landing page optimizada que duplicó las suscripciones a un boletín informativo."
+          },
+          "useCase4": {
+            "title": "Análisis de Embudo de Conversión",
+            "icon": "icon-[tabler--chart-bar]",
+            "example": "Implementamos un análisis de embudo que identificó puntos críticos y mejoró conversiones en un 25%."
+          }
+        },
+        "process": {
+          "step1": "Análisis de Comportamiento del Usuario",
+          "step2": "Definición de Objetivos de Conversión",
+          "step3": "Pruebas A/B y Multivariantes",
+          "step4": "Optimización de Diseño y Contenido",
+          "step5": "Implementación de Cambios",
+          "step6": "Monitoreo y Mejora Continua"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Qué es el CRO y por qué es importante?",
+            "answer": "El CRO mejora la tasa de conversión de tu sitio web, maximizando el valor de cada visitante."
+          },
+          "faq2": {
+            "question": "¿Cuánto tiempo toma ver resultados con CRO?",
+            "answer": "Generalmente se observan mejoras significativas dentro de 4 a 8 semanas después de implementar los cambios."
+          },
+          "faq3": {
+            "question": "¿El CRO es adecuado para cualquier negocio?",
+            "answer": "Sí, cualquier negocio que busque maximizar sus resultados digitales puede beneficiarse del CRO."
+          },
+          "faq4": {
+            "question": "¿Qué herramientas usan para CRO?",
+            "answer": "Usamos herramientas como Google Optimize, Hotjar y Analytics para pruebas y análisis detallados."
+          }
+        }
+      },
+      "digital-transformation": {
+        "title": "Transformación Digital",
+        "description": "Digitalizamos y modernizamos procesos empresariales.",
+        "details": "La transformación digital implica el uso de tecnología para mejorar y modernizar los procesos empresariales, optimizar recursos y ofrecer una mejor experiencia al cliente. Desde la automatización hasta la implementación de herramientas avanzadas, transformamos la forma en que las empresas operan y se conectan con sus clientes.",
+        "image": "digital.webp",
+        "quote": "Transforma tu negocio para adaptarte al mundo digital.",
+        "benefits": {
+          "benefit1": {
+            "title": "Automatización de Procesos",
+            "description": "Digitalizamos tareas repetitivas para ahorrar tiempo y recursos."
+          },
+          "benefit2": {
+            "title": "Mejora en la Experiencia del Cliente",
+            "description": "Ofrece una experiencia moderna y fluida a tus clientes."
+          },
+          "benefit3": {
+            "title": "Optimización de Recursos",
+            "description": "Reduce costos y mejora la eficiencia operativa con tecnología."
+          },
+          "benefit4": {
+            "title": "Adaptabilidad al Cambio",
+            "description": "Prepárate para un futuro digital con herramientas modernas."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Automatización de Tareas Administrativas",
+            "icon": "icon-[tabler--robot]",
+            "example": "Implementamos RPA para automatizar tareas repetitivas, ahorrando 20 horas semanales al personal."
+          },
+          "useCase2": {
+            "title": "Implementación de CRM",
+            "icon": "icon-[tabler--users]",
+            "example": "Desarrollamos un CRM personalizado que aumentó la retención de clientes en un 40%."
+          },
+          "useCase3": {
+            "title": "Migración a la Nube",
+            "icon": "icon-[tabler--cloud-upload]",
+            "example": "Ayudamos a una empresa a migrar sus operaciones a la nube, reduciendo costos de infraestructura en un 30%."
+          },
+          "useCase4": {
+            "title": "Analítica de Datos",
+            "icon": "icon-[tabler--chart-pie]",
+            "example": "Implementamos un sistema de analítica avanzada para optimizar las decisiones estratégicas."
+          }
+        },
+        "process": {
+          "step1": "Evaluación de Necesidades Digitales",
+          "step2": "Diseño de la Estrategia Digital",
+          "step3": "Selección e Implementación de Tecnologías",
+          "step4": "Automatización y Optimización",
+          "step5": "Capacitación del Equipo",
+          "step6": "Monitoreo y Actualización Continua"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Qué es la transformación digital?",
+            "answer": "Es el proceso de modernizar procesos empresariales con tecnología avanzada."
+          },
+          "faq2": {
+            "question": "¿Qué tipo de empresas pueden transformarse digitalmente?",
+            "answer": "Cualquier empresa, independientemente de su tamaño, puede beneficiarse de la transformación digital."
+          },
+          "faq3": {
+            "question": "¿Cuánto tiempo toma la transformación digital?",
+            "answer": "El tiempo varía según el alcance del proyecto, desde semanas hasta meses."
+          },
+          "faq4": {
+            "question": "¿Cómo impacta la transformación digital en los costos?",
+            "answer": "Reduce costos a largo plazo al optimizar recursos y mejorar la eficiencia operativa."
+          }
+        }
+      },
+      "business-intelligence": {
+        "title": "Business Intelligence (BI)",
+        "description": "Convierte datos en decisiones estratégicas.",
+        "details": "El Business Intelligence (BI) permite transformar datos en información valiosa que impulsa decisiones estratégicas. Al integrar herramientas de análisis avanzadas y reportes personalizados, ayudamos a las empresas a identificar oportunidades, predecir tendencias y optimizar el rendimiento en tiempo real.",
+        "image": "bi.webp",
+        "quote": "Convierte tus datos en el motor de decisiones estratégicas.",
+        "benefits": {
+          "benefit1": {
+            "title": "Toma de decisiones basada en datos",
+            "description": "Accede a insights en tiempo real para tomar decisiones más precisas y rápidas."
+          },
+          "benefit2": {
+            "title": "Identificación de oportunidades",
+            "description": "Detecta tendencias y oportunidades antes que la competencia."
+          },
+          "benefit3": {
+            "title": "Optimización de recursos",
+            "description": "Maximiza el uso de recursos mediante un análisis eficiente de los datos."
+          },
+          "benefit4": {
+            "title": "Mejora del rendimiento",
+            "description": "Aumenta la productividad al basar tus estrategias en información clara y confiable."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Análisis de ventas",
+            "icon": "icon-[tabler--chart-line]",
+            "example": "Desarrollamos dashboards que permitieron a un retailer aumentar las ventas en un 25% al identificar productos más vendidos."
+          },
+          "useCase2": {
+            "title": "Optimización de inventarios",
+            "icon": "icon-[tabler--building-warehouse]",
+            "example": "Implementamos BI para predecir la demanda, reduciendo costos de almacenamiento en un 30%."
+          },
+          "useCase3": {
+            "title": "Reportes financieros",
+            "icon": "icon-[tabler--cash]",
+            "example": "Creamos reportes financieros personalizados que facilitaron la gestión de presupuestos en tiempo real."
+          },
+          "useCase4": {
+            "title": "Análisis de clientes",
+            "icon": "icon-[tabler--users]",
+            "example": "Diseñamos un sistema de análisis de comportamiento de clientes, aumentando la retención en un 40%."
+          }
+        },
+        "process": {
+          "step1": "Definición de objetivos y métricas clave",
+          "step2": "Recolección y limpieza de datos",
+          "step3": "Diseño de dashboards y reportes",
+          "step4": "Implementación de herramientas BI",
+          "step5": "Capacitación para el equipo",
+          "step6": "Monitoreo y ajustes continuos"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Qué es el Business Intelligence?",
+            "answer": "Es el proceso de analizar datos para obtener información valiosa y tomar decisiones estratégicas."
+          },
+          "faq2": {
+            "question": "¿Qué herramientas utilizan para implementar BI?",
+            "answer": "Trabajamos con herramientas como Power BI, Tableau y Google Data Studio, entre otras."
+          },
+          "faq3": {
+            "question": "¿Cuánto tiempo toma implementar una solución BI?",
+            "answer": "Depende de la complejidad, pero típicamente entre 1 y 3 meses."
+          },
+          "faq4": {
+            "question": "¿Es necesario tener experiencia previa para usar BI?",
+            "answer": "No, ofrecemos capacitación para que tu equipo pueda utilizar las herramientas de manera efectiva."
+          }
+        }
+      },
+      "consulting-support": {
+        "title": "Consultoría, Soporte y Mantenimiento",
+        "description": "Optimiza y mantiene tus sistemas siempre disponibles.",
+        "details": "Nuestro servicio de consultoría, soporte y mantenimiento está diseñado para garantizar que tus sistemas operen de manera óptima y se adapten a las necesidades cambiantes de tu negocio. Desde diagnósticos técnicos hasta actualizaciones continuas, nos aseguramos de que tu infraestructura tecnológica sea confiable y escalable.",
+        "image": "consulting.webp",
+        "quote": "Tu tecnología, siempre lista para el éxito.",
+        "benefits": {
+          "benefit1": {
+            "title": "Maximización del tiempo de actividad",
+            "description": "Garantizamos que tus sistemas estén disponibles con el mínimo de interrupciones."
+          },
+          "benefit2": {
+            "title": "Reducción de costos de mantenimiento",
+            "description": "Soluciones preventivas que minimizan los gastos de reparación y paradas no planificadas."
+          },
+          "benefit3": {
+            "title": "Mejor rendimiento del sistema",
+            "description": "Optimizamos la configuración y el rendimiento para que tus sistemas funcionen al máximo."
+          },
+          "benefit4": {
+            "title": "Asesoramiento experto",
+            "description": "Recibe orientación técnica para alinear la tecnología con tus objetivos estratégicos."
+          }
+        },
+        "useCases": {
+          "useCase1": {
+            "title": "Diagnóstico preventivo",
+            "icon": "icon-[tabler--shield-check]",
+            "example": "Implementamos diagnósticos regulares que redujeron las fallas del sistema en un 40%."
+          },
+          "useCase2": {
+            "title": "Actualizaciones continuas",
+            "icon": "icon-[tabler--refresh]",
+            "example": "Desarrollamos un plan de actualización para un sistema ERP, mejorando su rendimiento en un 30%."
+          },
+          "useCase3": {
+            "title": "Recuperación ante desastres",
+            "icon": "icon-[tabler--cloud-off]",
+            "example": "Diseñamos un plan de recuperación que permitió a una empresa reanudar operaciones en menos de 2 horas tras una caída."
+          },
+          "useCase4": {
+            "title": "Optimización de servidores",
+            "icon": "icon-[tabler--server]",
+            "example": "Reconfiguramos servidores, incrementando la velocidad de carga de un sitio web en un 50%."
+          }
+        },
+        "process": {
+          "step1": "Evaluación inicial de sistemas",
+          "step2": "Planificación de mantenimiento",
+          "step3": "Implementación de mejoras",
+          "step4": "Soporte técnico 24/7",
+          "step5": "Monitoreo continuo",
+          "step6": "Revisión y optimización periódica"
+        },
+        "faq": {
+          "faq1": {
+            "question": "¿Qué incluye el servicio de soporte?",
+            "answer": "Incluye monitoreo, resolución de incidencias, actualizaciones y soporte técnico continuo."
+          },
+          "faq2": {
+            "question": "¿Pueden trabajar con sistemas heredados?",
+            "answer": "Sí, ofrecemos soporte tanto para sistemas modernos como para sistemas heredados."
+          },
+          "faq3": {
+            "question": "¿Ofrecen planes de mantenimiento personalizados?",
+            "answer": "Sí, adaptamos nuestros servicios según las necesidades específicas de tu negocio."
+          },
+          "faq4": {
+            "question": "¿Cuánto tiempo toma implementar un plan de mantenimiento?",
+            "answer": "La implementación inicial puede tomar entre 1 y 3 semanas, dependiendo de la complejidad del sistema."
+          }
+        }
+      }
+    }
+  },
+  "Metadata": {
+    "index": {
+      "title": "Joan Oviedo - Desarrollador Web Freelance en Cali, Colombia",
+      "description": "Desarrollador web freelance en Cali, Colombia, especializado en crear experiencias digitales impactantes. Con más de 5 años de experiencia, ofrezco servicios de desarrollo web, SEO, CRO, transformación digital y más."
+    },
+    "projects": {
+      "title": "Proyectos Destacados - Joan Oviedo",
+      "description": "Explora mis proyectos destacados, desde sitios web corporativos hasta aplicaciones interactivas. Con un enfoque en el diseño centrado en el usuario y el rendimiento óptimo, cada proyecto refleja mi pasión por la creación de experiencias digitales excepcionales."
+    },
+    "blog": {
+      "title": "Blog | Artículos sobre Desarrollo Web y SEO - Joan Oviedo",
+      "description": "Descubre artículos sobre tendencias en desarrollo web, SEO, optimización de rendimiento y estrategias digitales para potenciar tu negocio."
+    },
+    "services": {
+      "title": "Servicios | Desarrollo Web y SEO - Joan Oviedo",
+      "description": "Ofrecemos desarrollo de software a medida, optimización SEO, transformación digital y consultoría tecnológica para empresas y emprendedores."
+    },
+    "services_custom_software": {
+      "title": "Desarrollo de Software a Medida | Joan Oviedo",
+      "description": "Creamos aplicaciones personalizadas adaptadas a tus necesidades. Mejora tu eficiencia y transforma tu negocio con soluciones tecnológicas innovadoras."
+    },
+    "services_seo": {
+      "title": "SEO | Optimización para Motores de Búsqueda - Joan Oviedo",
+      "description": "Aumenta tu visibilidad en Google con estrategias SEO avanzadas. Posicionamos tu negocio en los primeros resultados y mejoramos tu tráfico web."
+    }
+  },
+  "Learning": {
+    "title": "Mi Universo de <p>Aprendizaje</p>",
+    "description": "Una constelación de mis logros y estudios. Pasa el cursor para ver las conexiones y haz clic para explorar."
+  }
+}

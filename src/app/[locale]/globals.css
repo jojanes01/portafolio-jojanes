@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+  background-color: #0e100f;
+}
+
+.text-bg {
+  background-image: radial-gradient(
+    61% 200% at 39.7% 21.9%,
+    rgb(255, 255, 255) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+/* Scrollbar Global Styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d; /* joanes-gray */
+  border: 1px solid #54545c; /* jojanes-border */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2ae98d; /* jojanes-green */
+  border-radius: 8px;
+  border: 2px solid #1d1d1d; /* Matching the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #25c87c; /* A darker green for hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: #000000; /* jojanes-black */
+}
+
+/* === Starry Background Animation === */
+/* Añade esto a tu archivo src/app/globals.css */
+
+@keyframes move-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px); /* La distancia que se mueven las estrellas */
+  }
+}
+
+.starry-background {
+  position: relative;
+  background-color: #121212; /* Un negro un poco más suave que el absoluto */
+}
+
+/* Creamos 3 capas de estrellas para un efecto de paralaje */
+.stars-layer1, .stars-layer2, .stars-layer3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+/* Capa 1: Estrellas pequeñas y lentas */
+.stars-layer1 {
+  background-image: radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)), radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)), radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)), radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)), radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)), radial-gradient(1px 1px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-size: 200px 200px;
+  animation: move-stars 150s linear infinite;
+}
+
+/* Capa 2: Estrellas medianas y más rápidas */
+.stars-layer2 {
+  background-image: radial-gradient(2px 2px at 10px 90px, #eee, rgba(0,0,0,0)), radial-gradient(2px 2px at 80px 30px, #fff, rgba(0,0,0,0)), radial-gradient(2px 2px at 120px 180px, #ddd, rgba(0,0,0,0)), radial-gradient(2px 2px at 70px 140px, #fff, rgba(0,0,0,0)), radial-gradient(2px 2px at 140px 100px, #fff, rgba(0,0,0,0)), radial-gradient(2px 2px at 180px 50px, #ddd, rgba(0,0,0,0));
+  background-size: 250px 250px;
+  animation: move-stars 100s linear infinite;
+}
+
+/* Capa 3: Estrellas grandes y muy lentas (lejanas) */
+.stars-layer3 {
+  background-image: radial-gradient(3px 3px at 50px 50px, #eee, rgba(0,0,0,0)), radial-gradient(3px 3px at 150px 150px, #fff, rgba(0,0,0,0));
+  background-size: 300px 300px;
+  animation: move-stars 200s linear infinite;
+}

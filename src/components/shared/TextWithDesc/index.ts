@@ -1,0 +1,1 @@
+export { TextWithDesc } from "./TextWithDesc";
