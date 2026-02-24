@@ -68,6 +68,103 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type Category = {
+  _id: string;
+  _type: "category";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  slug?: Slug;
+  description?: string;
+};
+
+export type BlockContent = Array<{
+  children?: Array<{
+    marks?: Array<string>;
+    text?: string;
+    _type: "span";
+    _key: string;
+  }>;
+  style?: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote" | "callout";
+  listItem?: "bullet" | "number" | "checklist";
+  markDefs?: Array<{
+    href?: string;
+    blank?: boolean;
+    _type: "link";
+    _key: string;
+  } | {
+    reference?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "post";
+    };
+    _type: "internalLink";
+    _key: string;
+  }>;
+  level?: number;
+  _type: "block";
+  _key: string;
+} | {
+  asset?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+  };
+  hotspot?: SanityImageHotspot;
+  crop?: SanityImageCrop;
+  alt?: string;
+  caption?: string;
+  layout?: "full" | "wide" | "normal";
+  _type: "image";
+  _key: string;
+} | {
+  language?: "javascript" | "typescript" | "python" | "java" | "csharp" | "go" | "rust" | "sql" | "html" | "css" | "json" | "yaml" | "bash" | "dockerfile" | "graphql" | "text";
+  filename?: string;
+  code?: string;
+  highlightLines?: Array<number>;
+  showLineNumbers?: boolean;
+  _type: "codeBlock";
+  _key: string;
+} | {
+  type?: "info" | "warning" | "success" | "error" | "tip";
+  title?: string;
+  content?: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+    listItem?: "bullet" | "number";
+    markDefs?: Array<{
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
+  _type: "callout";
+  _key: string;
+} | {
+  url?: string;
+  caption?: string;
+  _type: "youtube";
+  _key: string;
+} | {
+  rows?: Array<{
+    cells?: Array<string>;
+    _key: string;
+  }>;
+  _type: "table";
+  _key: string;
+}>;
+
 export type Post = {
   _id: string;
   _type: "post";
@@ -93,6 +190,7 @@ export type Post = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
+    caption?: string;
     _type: "image";
   };
   categories?: Array<{
@@ -103,24 +201,16 @@ export type Post = {
     [internalGroqTypeReferenceTo]?: "category";
   }>;
   publishedAt?: string;
-  body?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
+  featured?: boolean;
+  readingTime?: number;
+  body?: BlockContent;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    keywords?: Array<string>;
+    canonicalUrl?: string;
+  };
+  ogImage?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -131,8 +221,7 @@ export type Post = {
     crop?: SanityImageCrop;
     alt?: string;
     _type: "image";
-    _key: string;
-  }>;
+  };
 };
 
 export type Author = {
@@ -152,75 +241,18 @@ export type Author = {
     };
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
+    alt?: string;
     _type: "image";
   };
-  bio?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "normal";
-    listItem?: never;
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  }>;
-};
-
-export type Category = {
-  _id: string;
-  _type: "category";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  title?: string;
-  slug?: Slug;
-  description?: string;
-};
-
-export type Slug = {
-  _type: "slug";
-  current?: string;
-  source?: string;
-};
-
-export type BlockContent = Array<{
-  children?: Array<{
-    marks?: Array<string>;
-    text?: string;
-    _type: "span";
-    _key: string;
-  }>;
-  style?: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
-  listItem?: "bullet";
-  markDefs?: Array<{
-    href?: string;
-    _type: "link";
-    _key: string;
-  }>;
-  level?: number;
-  _type: "block";
-  _key: string;
-} | {
-  asset?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+  bio?: string;
+  role?: string;
+  social?: {
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+    website?: string;
   };
-  hotspot?: SanityImageHotspot;
-  crop?: SanityImageCrop;
-  alt?: string;
-  _type: "image";
-  _key: string;
-}>;
+};
 
 export type SanityImageCrop = {
   _type: "sanity.imageCrop";
@@ -279,165 +311,249 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Post | Author | Category | Slug | BlockContent | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type Slug = {
+  _type: "slug";
+  current?: string;
+  source?: string;
+};
+
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Category | BlockContent | Post | Author | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata | Slug;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/sanity/lib/queries.ts
 // Variable: POSTS_QUERY
-// Query: *[_type == "post" && defined(slug.current)][0...12]{  _id, title, slug, mainImage, description, publishedAt, categories[]->{title}, author->{name, image}}
+// Query: *[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...20]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      },      bio    }  }
 export type POSTS_QUERYResult = Array<{
   _id: string;
   title: string | null;
   slug: Slug | null;
-  mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
   description: string | null;
+  featured: boolean | null;
+  readingTime: number | null;
   publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+  } | null;
   categories: Array<{
+    _id: string;
     title: string | null;
+    slug: Slug | null;
   }> | null;
   author: {
     name: string | null;
     image: {
-      asset?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-      };
-      hotspot?: SanityImageHotspot;
-      crop?: SanityImageCrop;
-      _type: "image";
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
     } | null;
+    bio: string | null;
+  } | null;
+}>;
+// Variable: FEATURED_POSTS_QUERY
+// Query: *[_type == "post" && defined(slug.current) && featured == true] | order(publishedAt desc)[0...3]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      },      bio    }  }
+export type FEATURED_POSTS_QUERYResult = Array<{
+  _id: string;
+  title: string | null;
+  slug: Slug | null;
+  description: string | null;
+  featured: boolean | null;
+  readingTime: number | null;
+  publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+  } | null;
+  categories: Array<{
+    _id: string;
+    title: string | null;
+    slug: Slug | null;
+  }> | null;
+  author: {
+    name: string | null;
+    image: {
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
+    } | null;
+    bio: string | null;
   } | null;
 }>;
 // Variable: POST_QUERY
-// Query: *[_type == "post" && slug.current == $slug][0]{  title, description, body, mainImage, publishedAt, categories[]->{title}, author->{name, image}}
+// Query: *[_type == "post" && slug.current == $slug][0]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt,      caption    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      },      bio    },    body,    seo {      metaTitle,      metaDescription,      keywords,      canonicalUrl    },    ogImage {      asset->{        _id,        url      },      alt    }  }
 export type POST_QUERYResult = {
+  _id: string;
   title: string | null;
+  slug: Slug | null;
   description: string | null;
-  body: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "normal";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-    _key: string;
-  }> | null;
-  mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
+  featured: boolean | null;
+  readingTime: number | null;
   publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+    caption: string | null;
+  } | null;
   categories: Array<{
+    _id: string;
     title: string | null;
+    slug: Slug | null;
   }> | null;
   author: {
     name: string | null;
     image: {
-      asset?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-      };
-      hotspot?: SanityImageHotspot;
-      crop?: SanityImageCrop;
-      _type: "image";
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
     } | null;
+    bio: string | null;
+  } | null;
+  body: BlockContent | null;
+  seo: {
+    metaTitle: string | null;
+    metaDescription: string | null;
+    keywords: Array<string> | null;
+    canonicalUrl: string | null;
+  } | null;
+  ogImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
   } | null;
 } | null;
+// Variable: POSTS_BY_CATEGORY_QUERY
+// Query: *[_type == "post" && defined(slug.current) && $category in categories[]->title] | order(publishedAt desc)[0...12]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      },      bio    }  }
+export type POSTS_BY_CATEGORY_QUERYResult = Array<{
+  _id: string;
+  title: string | null;
+  slug: Slug | null;
+  description: string | null;
+  featured: boolean | null;
+  readingTime: number | null;
+  publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+  } | null;
+  categories: Array<{
+    _id: string;
+    title: string | null;
+    slug: Slug | null;
+  }> | null;
+  author: {
+    name: string | null;
+    image: {
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
+    } | null;
+    bio: string | null;
+  } | null;
+}>;
+// Variable: RELATED_POSTS_QUERY
+// Query: *[_type == "post" && defined(slug.current) && slug.current != $currentSlug && count((categories[]->title)[@ in ^.categories[]->title]) > 0] | order(publishedAt desc)[0...3]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      }    }  }
+export type RELATED_POSTS_QUERYResult = Array<{
+  _id: string;
+  title: string | null;
+  slug: Slug | null;
+  description: string | null;
+  featured: boolean | null;
+  readingTime: number | null;
+  publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+  } | null;
+  categories: Array<{
+    _id: string;
+    title: string | null;
+    slug: Slug | null;
+  }> | null;
+  author: {
+    name: string | null;
+    image: {
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
+    } | null;
+  } | null;
+}>;
 // Variable: LATEST_POSTS_QUERY
-// Query: *[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...3]{  _id, title, slug, mainImage, description, publishedAt, categories[]->{title}, author->{name, image}}
+// Query: *[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...4]{    _id,    title,    slug,    description,    featured,    readingTime,    publishedAt,    mainImage {      asset->{        _id,        url      },      alt    },    categories[]->{      _id,      title,      slug    },    author->{      name,      image {        asset->{          _id,          url        }      }    }  }
 export type LATEST_POSTS_QUERYResult = Array<{
   _id: string;
   title: string | null;
   slug: Slug | null;
-  mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
   description: string | null;
+  featured: boolean | null;
+  readingTime: number | null;
   publishedAt: string | null;
+  mainImage: {
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
+    alt: string | null;
+  } | null;
   categories: Array<{
+    _id: string;
     title: string | null;
+    slug: Slug | null;
   }> | null;
   author: {
     name: string | null;
     image: {
-      asset?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-      };
-      hotspot?: SanityImageHotspot;
-      crop?: SanityImageCrop;
-      _type: "image";
+      asset: {
+        _id: string;
+        url: string | null;
+      } | null;
     } | null;
   } | null;
 }>;
 // Variable: CATEGORIES_QUERY
-// Query: *[_type == "category"]{    _id,    title,    // Aquí puedes añadir más campos si los necesitas, por ejemplo slug  }
+// Query: *[_type == "category"] | order(title asc){    _id,    title,    description,    slug  }
 export type CATEGORIES_QUERYResult = Array<{
   _id: string;
   title: string | null;
+  description: string | null;
+  slug: Slug | null;
 }>;
+// Variable: POST_SLUGS_QUERY
+// Query: *[_type == "post" && defined(slug.current)][].slug.current
+export type POST_SLUGS_QUERYResult = Array<string | null>;
 
 // Query TypeMap
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
-    "*[_type == \"post\" && defined(slug.current)][0...12]{\n  _id, title, slug, mainImage, description, publishedAt, categories[]->{title}, author->{name, image}\n}": POSTS_QUERYResult;
-    "*[_type == \"post\" && slug.current == $slug][0]{\n  title, description, body, mainImage, publishedAt, categories[]->{title}, author->{name, image}\n}": POST_QUERYResult;
-    "*[_type == \"post\" && defined(slug.current)] | order(publishedAt desc)[0...3]{\n  _id, title, slug, mainImage, description, publishedAt, categories[]->{title}, author->{name, image}\n}": LATEST_POSTS_QUERYResult;
-    "\n  *[_type == \"category\"]{\n    _id,\n    title,\n    // Aqu\xED puedes a\xF1adir m\xE1s campos si los necesitas, por ejemplo slug\n  }\n": CATEGORIES_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current)] | order(publishedAt desc)[0...20]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      },\n      bio\n    }\n  }\n": POSTS_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current) && featured == true] | order(publishedAt desc)[0...3]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      },\n      bio\n    }\n  }\n": FEATURED_POSTS_QUERYResult;
+    "\n  *[_type == \"post\" && slug.current == $slug][0]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt,\n      caption\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      },\n      bio\n    },\n    body,\n    seo {\n      metaTitle,\n      metaDescription,\n      keywords,\n      canonicalUrl\n    },\n    ogImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    }\n  }\n": POST_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current) && $category in categories[]->title] | order(publishedAt desc)[0...12]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      },\n      bio\n    }\n  }\n": POSTS_BY_CATEGORY_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current) && slug.current != $currentSlug && count((categories[]->title)[@ in ^.categories[]->title]) > 0] | order(publishedAt desc)[0...3]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      }\n    }\n  }\n": RELATED_POSTS_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current)] | order(publishedAt desc)[0...4]{\n    _id,\n    title,\n    slug,\n    description,\n    featured,\n    readingTime,\n    publishedAt,\n    mainImage {\n      asset->{\n        _id,\n        url\n      },\n      alt\n    },\n    categories[]->{\n      _id,\n      title,\n      slug\n    },\n    author->{\n      name,\n      image {\n        asset->{\n          _id,\n          url\n        }\n      }\n    }\n  }\n": LATEST_POSTS_QUERYResult;
+    "\n  *[_type == \"category\"] | order(title asc){\n    _id,\n    title,\n    description,\n    slug\n  }\n": CATEGORIES_QUERYResult;
+    "\n  *[_type == \"post\" && defined(slug.current)][].slug.current\n": POST_SLUGS_QUERYResult;
   }
 }

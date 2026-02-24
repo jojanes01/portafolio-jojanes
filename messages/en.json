@@ -7,6 +7,7 @@
       "services": "Services",
       "blog": "Blog",
       "learning": "Learning",
+      "workflow": "AI Workflow",
       "consult": "LET'S TALK"
     },
     "services": {
@@ -23,24 +24,26 @@
     "linkedin": "https://www.linkedin.com/in/jojanes/?locale=en_US",
     "cv": "https://jojanes.com/docs/CV-JOAN-OVIEDO-ENGLISH.pdf",
     "avatar": {
-      "alt": "Joan Oviedo",
-      "description": "Available for freelance work"
+      "alt": "Joan Oviedo — Senior Fullstack Developer",
+      "description": "Open to new opportunities"
     },
-    "headline": "Building impactful web experiences for global audiences.",
-    "subheadline": "With over 5 years of expertise, I bring innovation, adaptability, and a user-focused approach to every project.",
+    "headline": "Engineering products that scale to millions of users.",
+    "subheadline": "Senior Fullstack Developer with 5+ years building high-impact products at Telefónica, startups, and agencies — from pixel-perfect frontends to robust backend architectures.",
     "buttons": {
-      "getStarted": "GET STARTED",
-      "viewPortfolio": "VIEW PORTFOLIO"
+      "getStarted": "SCHEDULE A CALL",
+      "viewPortfolio": "VIEW PROJECTS"
     }
   },
   "Projects": {
     "title": "Recent Projects",
+    "viewAll": "View all projects",
     "texts": {
       "role": "Role",
       "deliverables": "Deliverables",
       "company": "Company",
       "year": "Year",
-      "site": "Website"
+      "site": "Visit Project",
+      "visitSite": "Visit Site"
     },
     "items": {
       "globalStreaming": {
@@ -196,6 +199,13 @@
     "title": "Skills",
     "description": "Here, I showcase the tools and programming languages I work with. From React to TypeScript, each skill reflects my ability to deliver robust and dynamic digital solutions."
   },
+  "Mind": {
+    "label": "Let's build something great",
+    "title": "Have a project in mind?",
+    "description": "I'm available for freelance work and remote senior roles. Whether it's a new product, a legacy system to modernize, or an AI integration — let's talk.",
+    "button": "Start a conversation",
+    "alt": "or send an email"
+  },
   "Footer": {
     "email": "jojanes011@gmail.com",
     "usefulLinksTitle": "Useful links",
@@ -223,11 +233,6 @@
     "title": "Latest Articles",
     "buttonAll": "View all articles",
     "notFound": "No articles found"
-  },
-  "Mind": {
-    "title": "Have a Project in Mind?",
-    "description": "Let's discuss your ideas and bring them to life. Whether you're looking to build a website, web application, or digital experience, I'm here to help. Reach out to me today and let's get started!",
-    "button": "LET'S TALK"
   },
   "Services": {
     "title": "Services",
@@ -678,6 +683,92 @@
       }
     }
   },
+  "Workflow": {
+    "title": "AI-Optimized Workflow",
+    "subtitle": "How I use AI to improve code quality and productivity every day.",
+    "headlineBefore": "Great code starts with ",
+    "headlineHighlight": "strong foundations",
+    "headlineAfter": ".",
+    "headlineDescription": "When people ask if I use AI in my day-to-day work, this is my answer: a repeatable workflow that keeps quality high and output predictable across stacks.",
+    "productivityClaim": "Productivity & quality",
+    "productivityValue": "2x",
+    "steps": {
+      "foundations": {
+        "title": "Strong foundations",
+        "description": "Before generating a single line, define the base: clear requirements, scope, and success criteria."
+      },
+      "model": {
+        "title": "Choose the right model",
+        "description": "Pick a capable model for the task: Gemini, Claude, Kimi, or ChatGPT — depending on context length, code quality, and availability."
+      },
+      "tool": {
+        "title": "Choose the right tool",
+        "description": "Cursor, Windsurf, Claude Code, Codex, or similar — the IDE or agent that best fits your stack and workflow."
+      },
+      "hu": {
+        "title": "Clear user stories & acceptance criteria",
+        "description": "Well-written HUs with explicit acceptance criteria so the AI (and the team) know exactly what \"done\" looks like."
+      },
+      "skills": {
+        "title": "Skills & rules",
+        "description": "Use project-specific skills (e.g. React best practices, SOLID) and Cursor rules so the AI follows your standards."
+      },
+      "mcp": {
+        "title": "MCPs that extend the AI",
+        "description": "My go-to MCPs: Playwright, Context7, Supabase, Chrome DevTools, GitHub, Notion — for docs, DB, browser automation, and repos."
+      },
+      "context": {
+        "title": "Give the tool context",
+        "description": "Attach relevant files, paste error messages, and describe the goal so the AI has enough signal to generate correct code."
+      },
+      "architecture": {
+        "title": "Clear architecture & patterns",
+        "description": "A defined project structure and design patterns for both backend and frontend — so the AI generates code that fits the system."
+      },
+      "data-contract": {
+        "title": "Data contract",
+        "description": "Define schemas and contracts (e.g. API types, DB models) so the AI doesn't invent or remove fields unexpectedly."
+      },
+      "best-practices": {
+        "title": "Code with best practices",
+        "description": "Clean Code, SOLID, and framework-specific guidelines (e.g. Vercel React/Next.js best practices) applied consistently."
+      },
+      "testing": {
+        "title": "Testing",
+        "description": "Unit tests, E2E tests, and automated Playwright flows to catch regressions and validate behavior."
+      },
+      "pipelines": {
+        "title": "CI/CD pipelines",
+        "description": "GitHub Actions (or similar) to run tests, lint, and deploy — so every change is validated before merge."
+      },
+      "code-review": {
+        "title": "Code review",
+        "description": "Human or tool-assisted review (e.g. GitHub PRs, SonarQube, peer review) to keep quality and consistency."
+      }
+    },
+    "stacksTitle": "Applied to every stack",
+    "stacksSubtitle": "The same workflow adapts to the stack: foundations and quality first, then stack-specific practices.",
+    "stacks": {
+      "nextjs": {
+        "name": "Next.js",
+        "description": "App Router, RSC, Vercel best practices, avoid waterfalls, optimize bundle size, and use the React/Next.js skills in the project."
+      },
+      "springboot": {
+        "name": "Java Spring Boot",
+        "description": "Layered architecture, REST conventions, Spring Security, clean code and testing (JUnit, MockMvc, Testcontainers)."
+      },
+      "python": {
+        "name": "Python",
+        "description": "FastAPI or Django, type hints, pytest, and clear project structure (e.g. src layout, dependency injection)."
+      },
+      "react-native": {
+        "name": "React Native",
+        "description": "Expo when possible, performance awareness, native modules when needed, and the same quality bar as web React."
+      }
+    },
+    "cta": "Use this workflow in your next project",
+    "stepsTitle": "The workflow, step by step"
+  },
   "Metadata": {
     "index": {
       "title": "Joan Oviedo - Freelance Web Developer in Cali, Colombia",
@@ -702,6 +793,10 @@
     "blog": {
       "title": "Blog | Web Development & SEO Articles - Joan Oviedo",
       "description": "Discover articles on web development trends, SEO, performance optimization, and digital strategies to boost your business."
+    },
+    "workflow": {
+      "title": "AI-Optimized Workflow | Joan Oviedo",
+      "description": "How I use AI to improve code quality and productivity: foundations, model, tool, HUs, skills, MCPs, architecture, testing, and CI/CD — applied to Next.js, Spring Boot, Python, and React Native."
     }
   },
   "Learning": {

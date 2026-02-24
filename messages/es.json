@@ -7,6 +7,7 @@
       "services": "Servicios",
       "blog": "Blog",
       "learning": "Aprendizaje",
+      "workflow": "Flujo IA",
       "consult": "CONSULTAR"
     },
     "services": {
@@ -23,24 +24,25 @@
     "linkedin": "https://www.linkedin.com/in/jojanes",
     "cv": "https://jojanes.com/docs/CV-JOAN-OVIEDO-ESPAÑOL.pdf",
     "avatar": {
-      "alt": "Joan Oviedo",
-      "description": "Disponible para trabajo freelance"
+      "alt": "Joan Oviedo — Senior Fullstack Developer",
+      "description": "Abierto a nuevas oportunidades"
     },
-    "headline": "Creando experiencias web impactantes para audiencias globales.",
-    "subheadline": "Con más de 5 años de experiencia, aporto innovación, adaptabilidad y un enfoque centrado en el usuario a cada proyecto.",
+    "headline": "Construyo productos que escalan a millones de usuarios.",
+    "subheadline": "Senior Fullstack Developer con 5+ años construyendo productos de alto impacto en Telefónica, startups y agencias — desde frontends pixel-perfect hasta arquitecturas backend robustas.",
     "buttons": {
-      "getStarted": "EMPEZAR",
-      "viewPortfolio": "VER PORTAFOLIO"
+      "getStarted": "AGENDAR LLAMADA",
+      "viewPortfolio": "VER PROYECTOS"
     }
   },
   "Projects": {
     "title": "Proyectos Recientes",
+    "viewAll": "Ver todos los proyectos",
     "texts": {
       "role": "Rol",
       "deliverables": "Entregables",
       "company": "Empresa",
       "year": "Año",
-      "site": "Sitio Web",
+      "site": "Visitar Proyecto",
       "visitSite": "Visitar Sitio"
     },
     "items": {
@@ -118,8 +120,8 @@
       },
       "jjsecurity": {
         "name": "JJ Security",
-        "description": "A corporate website for JJ Security, a security company in Cali, Colombia. Beyond the initial Next.js development, a sophisticated SEO strategy combined with AI for content generation was implemented. This initiative successfully grew organic leads from nearly zero to over 100 per month, transforming a simple landing page and blog into the company's primary client acquisition channel.",
-        "role": "Front-End Developer & Lead Generation Strategist",
+        "description": "Sitio web corporativo para JJ Security, empresa de seguridad en Cali, Colombia. Más allá del desarrollo inicial en Next.js, se implementó una estrategia SEO con IA para generación de contenido que creció los leads orgánicos de casi cero a más de 100 mensuales, convirtiendo el sitio en el canal principal de adquisición de clientes.",
+        "role": "Desarrollador Front-End y Estratega de Lead Generation",
         "deliverables": "NextJS Website, AI-Powered SEO Strategy, Lead Generation Funnel",
         "company": "JJ Security",
         "year": "2024"
@@ -218,6 +220,13 @@
     "title": "Habilidades",
     "description": "Aquí muestro las herramientas y lenguajes de programación con los que trabajo. Desde React hasta TypeScript, cada habilidad refleja mi capacidad para entregar soluciones digitales robustas y dinámicas."
   },
+  "Mind": {
+    "label": "Construyamos algo grande",
+    "title": "¿Tienes un proyecto en mente?",
+    "description": "Estoy disponible para trabajo freelance y roles senior remotos. Ya sea un nuevo producto, un sistema legado que modernizar, o una integración con IA — hablemos.",
+    "button": "Iniciar conversación",
+    "alt": "o envía un correo"
+  },
   "Footer": {
     "email": "jojanes011@gmail.com",
     "usefulLinksTitle": "Enlaces útiles",
@@ -248,11 +257,6 @@
     "notFound": "No se encontraron artículos",
     "by": "por",
     "localeDate": "es-ES"
-  },
-  "Mind": {
-    "title": "¿Tienes algún proyecto en mente?",
-    "description": "¡Hablemos! Estoy disponible para colaborar en proyectos web emocionantes y desafiantes. Desde el diseño hasta el desarrollo, estoy aquí para ayudarte a llevar tu visión digital al siguiente nivel. ¡Contáctame hoy y comencemos a trabajar juntos!",
-    "button": "CONTACTAR"
   },
   "Services": {
     "title": "Servicios",
@@ -703,6 +707,92 @@
       }
     }
   },
+  "Workflow": {
+    "title": "Flujo de trabajo optimizado por IA",
+    "subtitle": "Cómo uso IA para mejorar la calidad del código y la productividad en el día a día.",
+    "headlineBefore": "Un gran código empieza con ",
+    "headlineHighlight": "bases sólidas",
+    "headlineAfter": ".",
+    "headlineDescription": "Cuando me preguntan si uso IA en mi día a día, esta es mi respuesta: un flujo repetible que mantiene la calidad alta y el resultado predecible en cualquier stack.",
+    "productivityClaim": "Productividad y calidad",
+    "productivityValue": "2x",
+    "steps": {
+      "foundations": {
+        "title": "Bases sólidas",
+        "description": "Antes de generar una sola línea, definir la base: requisitos claros, alcance y criterios de éxito."
+      },
+      "model": {
+        "title": "Elegir el modelo adecuado",
+        "description": "Elegir un modelo capaz para la tarea: Gemini, Claude, Kimi o ChatGPT — según contexto, calidad de código y disponibilidad."
+      },
+      "tool": {
+        "title": "Elegir la herramienta adecuada",
+        "description": "Cursor, Windsurf, Claude Code, Codex u otra — el IDE o agente que mejor se adapte a tu stack y flujo."
+      },
+      "hu": {
+        "title": "Historias de usuario y criterios de aceptación",
+        "description": "HUs bien escritas con criterios de aceptación explícitos para que la IA (y el equipo) sepan qué significa \"hecho\"."
+      },
+      "skills": {
+        "title": "Skills y reglas",
+        "description": "Usar skills del proyecto (ej. buenas prácticas React, SOLID) y reglas de Cursor para que la IA siga tus estándares."
+      },
+      "mcp": {
+        "title": "MCPs que amplían la IA",
+        "description": "Mis MCPs favoritos: Playwright, Context7, Supabase, Chrome DevTools, GitHub, Notion — para docs, BD, automatización en navegador y repos."
+      },
+      "context": {
+        "title": "Dar contexto a la herramienta",
+        "description": "Adjuntar archivos relevantes, pegar mensajes de error y describir el objetivo para que la IA tenga suficiente señal."
+      },
+      "architecture": {
+        "title": "Arquitectura y patrones claros",
+        "description": "Estructura de proyecto y patrones de diseño definidos (backend y frontend) para que el código generado encaje en el sistema."
+      },
+      "data-contract": {
+        "title": "Contrato de datos",
+        "description": "Definir esquemas y contratos (tipos de API, modelos de BD) para que la IA no invente ni borre campos."
+      },
+      "best-practices": {
+        "title": "Código con buenas prácticas",
+        "description": "Clean Code, SOLID y guías del framework (ej. buenas prácticas Vercel React/Next.js) aplicadas de forma consistente."
+      },
+      "testing": {
+        "title": "Pruebas",
+        "description": "Pruebas unitarias, E2E y flujos automatizados con Playwright para detectar regresiones y validar comportamiento."
+      },
+      "pipelines": {
+        "title": "Pipelines CI/CD",
+        "description": "GitHub Actions (u otro) para ejecutar tests, lint y deploy — cada cambio validado antes del merge."
+      },
+      "code-review": {
+        "title": "Code review",
+        "description": "Revisión humana o asistida por herramientas (PRs en GitHub, SonarQube, revisión por pares) para mantener calidad y consistencia."
+      }
+    },
+    "stacksTitle": "Aplicado a cada stack",
+    "stacksSubtitle": "El mismo flujo se adapta al stack: primero bases y calidad, luego prácticas específicas del stack.",
+    "stacks": {
+      "nextjs": {
+        "name": "Next.js",
+        "description": "App Router, RSC, buenas prácticas Vercel, evitar waterfalls, optimizar bundle y usar las skills React/Next.js del proyecto."
+      },
+      "springboot": {
+        "name": "Java Spring Boot",
+        "description": "Arquitectura en capas, convenciones REST, Spring Security, código limpio y pruebas (JUnit, MockMvc, Testcontainers)."
+      },
+      "python": {
+        "name": "Python",
+        "description": "FastAPI o Django, type hints, pytest y estructura de proyecto clara (layout src, inyección de dependencias)."
+      },
+      "react-native": {
+        "name": "React Native",
+        "description": "Expo cuando sea posible, conciencia de rendimiento, módulos nativos cuando haga falta y el mismo nivel de calidad que en React web."
+      }
+    },
+    "cta": "Lleva este flujo a tu próximo proyecto",
+    "stepsTitle": "El flujo, paso a paso"
+  },
   "Metadata": {
     "index": {
       "title": "Joan Oviedo - Desarrollador Web Freelance en Cali, Colombia",
@@ -727,6 +817,10 @@
     "services_seo": {
       "title": "SEO | Optimización para Motores de Búsqueda - Joan Oviedo",
       "description": "Aumenta tu visibilidad en Google con estrategias SEO avanzadas. Posicionamos tu negocio en los primeros resultados y mejoramos tu tráfico web."
+    },
+    "workflow": {
+      "title": "Flujo de trabajo optimizado por IA | Joan Oviedo",
+      "description": "Cómo uso IA para mejorar calidad de código y productividad: bases, modelo, herramienta, HUs, skills, MCPs, arquitectura, pruebas y CI/CD — aplicado a Next.js, Spring Boot, Python y React Native."
     }
   },
   "Learning": {

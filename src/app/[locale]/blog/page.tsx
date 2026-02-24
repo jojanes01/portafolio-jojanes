@@ -1,5 +1,5 @@
-import { BlogWrapper } from "app/components/blog/BlogWrapper";
-import { AppBar } from "app/components/shared/AppBar";
+import { BlogHero } from "app/components/blog/BlogHero/BlogHero";
+import { BlogWrapper } from "app/components/blog/BlogWrapper/BlogWrapper";
 import { client } from "app/sanity/lib/client";
 import { CATEGORIES_QUERY, POSTS_QUERY } from "app/sanity/lib/queries";
 import { Metadata } from "next";
@@ -23,7 +23,7 @@ export async function generateMetadata({
       siteName: "Joan Oviedo",
       images: [
         {
-          url: "https://jojanes.com/og-services.png",
+          url: "https://jojanes.com/og-blog.png",
           width: 1200,
           height: 630,
           alt: t("title"),
@@ -31,16 +31,31 @@ export async function generateMetadata({
       ],
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["https://jojanes.com/og-blog.png"],
+    },
+    alternates: {
+      languages: {
+        en: "https://jojanes.com/en/blog",
+        es: "https://jojanes.com/es/blog",
+      },
+    },
   };
 }
 
 export default async function BlogPage() {
   const posts = await client.fetch(POSTS_QUERY);
   const categories = await client.fetch(CATEGORIES_QUERY);
+
   return (
-    <main className="px-4 sm:px-0 max-w-6xl sm:mx-auto">
-      <AppBar title="Blog" />
-      <BlogWrapper posts={posts} categories={categories} />{" "}
+    <main className="min-h-screen bg-jojanes-black">
+      <BlogHero />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20" id="categories">
+        <BlogWrapper posts={posts} categories={categories} />
+      </div>
     </main>
   );
 }

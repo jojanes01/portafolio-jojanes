@@ -1,46 +1,84 @@
-import {UserIcon} from '@sanity/icons'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import { UserIcon } from "@sanity/icons";
+import { defineField, defineType } from "sanity";
 
 export const authorType = defineType({
-  name: 'author',
-  title: 'Author',
-  type: 'document',
+  name: "author",
+  title: "Author",
+  type: "document",
   icon: UserIcon,
   fields: [
     defineField({
-      name: 'name',
-      type: 'string',
+      name: "name",
+      type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'slug',
-      type: 'slug',
+      name: "slug",
+      type: "slug",
       options: {
-        source: 'name',
+        source: "name",
+        maxLength: 96,
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'image',
-      type: 'image',
+      name: "image",
+      type: "image",
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+          title: "Alternative Text",
+        },
+      ],
     }),
     defineField({
-      name: 'bio',
-      type: 'array',
-      of: [
-        defineArrayMember({
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
+      name: "bio",
+      type: "text",
+      title: "Biography",
+      description: "Short biography (shown in author card)",
+    }),
+    defineField({
+      name: "role",
+      type: "string",
+      title: "Role",
+      description: "e.g., Senior Developer, Tech Lead",
+    }),
+    defineField({
+      name: "social",
+      title: "Social Links",
+      type: "object",
+      fields: [
+        defineField({
+          name: "twitter",
+          type: "url",
+          title: "Twitter/X",
+        }),
+        defineField({
+          name: "linkedin",
+          type: "url",
+          title: "LinkedIn",
+        }),
+        defineField({
+          name: "github",
+          type: "url",
+          title: "GitHub",
+        }),
+        defineField({
+          name: "website",
+          type: "url",
+          title: "Website",
         }),
       ],
     }),
   ],
   preview: {
     select: {
-      title: 'name',
-      media: 'image',
+      title: "name",
+      media: "image",
     },
   },
-})
+});
