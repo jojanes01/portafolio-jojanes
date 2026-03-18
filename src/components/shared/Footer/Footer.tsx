@@ -22,7 +22,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="relative border-t border-[#1A1F1C] bg-[#0A0C0B]">
+    <footer className="relative border-t border-[#1A1F1C] bg-[#0A0C0B] overflow-hidden">
       {/* Top glow */}
       <div
         aria-hidden="true"

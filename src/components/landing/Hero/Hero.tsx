@@ -26,7 +26,7 @@ export const Hero = async () => {
      * bleeds naturally into the page background (#0e100f).
      * The gradient at the bottom fades the Hero into the rest of the page.
      */
-    <section className="relative w-full pb-16 sm:pb-24">
+    <section className="relative w-full overflow-hidden pb-16 sm:pb-24">
       {/* ── Ambient glow blobs — full-width, unrestricted ── */}
       <div
         aria-hidden="true"

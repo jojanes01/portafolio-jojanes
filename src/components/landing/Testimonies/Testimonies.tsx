@@ -107,7 +107,7 @@ export const Testimonies = () => {
 
   /* CSS-animation carousel – same pattern as TechCarrusel */
   return (
-    <section className="relative max-w-6xl mx-auto sm:mx-auto pb-0 sm:pb-32">
+    <section className="relative w-full overflow-x-hidden max-w-6xl mx-auto pb-0 sm:pb-32">
       {/* ── Section header ── */}
       <div
         ref={headerRef}
@@ -161,7 +161,7 @@ export const Testimonies = () => {
       </div>
 
       {/* ── Scrolling carousel ── */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden w-full">
         {/* Fade masks */}
         <div
           aria-hidden="true"
@@ -175,7 +175,7 @@ export const Testimonies = () => {
         />
 
         {/* Track */}
-        <div className="flex testimonies-track py-4">
+        <div className="flex gap-4 testimonies-track py-4">
           {/* Double for seamless loop */}
           {[0, 1].map((pass) => (
             <div key={pass} className="flex gap-4 flex-shrink-0">
