@@ -208,7 +208,7 @@ export default async function PostPage({ params }: PostPageProps) {
             </aside>
 
             <div className="lg:col-span-9">
-              <div className="prose prose-invert prose-lg max-w-none">
+              <div className="prose prose-invert prose-lg max-w-none text-jojanes-white/90">
                 <PortableText
                   value={post.body}
                   components={PortableTextComponents}

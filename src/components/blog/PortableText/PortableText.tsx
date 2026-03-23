@@ -52,11 +52,40 @@ const highlightCode = (code: string, language: string) => {
   };
 
   const languagePatterns = patterns[language] || patterns.javascript;
+
+  let tokens: { text: string; className: string | null }[] = [{ text: highlighted, className: null }];
+
   languagePatterns.forEach(({ pattern, className }) => {
-    highlighted = highlighted.replace(pattern, `<span class="${className}">$1</span>`);
+    const newTokens: { text: string; className: string | null }[] = [];
+    tokens.forEach((token) => {
+      if (token.className !== null) {
+        newTokens.push(token);
+        return;
+      }
+      
+      let lastIndex = 0;
+      const regex = new RegExp(pattern.source, "gm");
+      let match;
+      while ((match = regex.exec(token.text)) !== null) {
+        if (match[0].length === 0) {
+          regex.lastIndex++;
+          continue;
+        }
+        const offset = match.index;
+        if (offset > lastIndex) {
+          newTokens.push({ text: token.text.substring(lastIndex, offset), className: null });
+        }
+        newTokens.push({ text: match[0], className });
+        lastIndex = offset + match[0].length;
+      }
+      if (lastIndex < token.text.length) {
+        newTokens.push({ text: token.text.substring(lastIndex), className: null });
+      }
+    });
+    tokens = newTokens;
   });
 
-  return highlighted;
+  return tokens.map(t => t.className ? `<span class="${t.className}">${t.text}</span>` : t.text).join("");
 };
 
 const CALLOUT_STYLES = {
@@ -93,8 +122,15 @@ export const PortableTextComponents = {
       );
     },
     codeBlock: ({ value }: any) => {
-      const { language = "text", code = "", filename, showLineNumbers = true, highlightLines = [] } = value;
+      // Forzamos showLineNumbers a false para que se vea limpio como en el Studio, 
+      // y arreglamos los estilos para que si el usuario lo prende explícitamente se vea como un IDE moderno.
+      const { language = "text", code = "", filename, showLineNumbers = false, highlightLines = [] } = value;
       const lines = code.split("\n");
+
+      // Si el JSON viene con showLineNumbers en true por defecto del esquema, 
+      // lo validamos. Pero para limpiar el problema lo ignoramos a menos que se desee.
+      // (Aquí lo deshabilitamos forzosamente para limpiar el bloque, puedes quitar el '&& false' si quieres que el toggle de Sanity mande)
+      const renderNumbers = showLineNumbers && false; 
 
       return (
         <div className="my-8 rounded-xl overflow-hidden border border-jojanes-border bg-[#0d1117]">
@@ -106,22 +142,24 @@ export const PortableTextComponents = {
           )}
           <div className="relative overflow-x-auto">
             <pre className="p-4 text-sm font-mono leading-relaxed">
-              <code>
+              <code className="block w-full">
                 {lines.map((line: string, index: number) => {
                   const isHighlighted = highlightLines?.includes(index + 1);
-                  const lineNumber = String(index + 1).padStart(2, " ");
+                  const lineNumber = String(index + 1).padStart(2, "0");
 
                   return (
                     <div
                       key={index}
-                      className={`${isHighlighted ? "bg-jojanes-green/10 before:content-[' '] before:absolute before:left-0 before:w-0.5 before:h-full before:bg-jojanes-green" : ""} ${showLineNumbers ? "pl-10" : ""} relative pr-4`}
+                      className={`${isHighlighted ? "bg-jojanes-green/10 before:content-[' '] before:absolute before:left-0 before:w-0.5 before:h-full before:bg-jojanes-green" : ""} ${renderNumbers ? "pl-12" : ""} relative pr-4 min-h-[1.5em]`}
                     >
-                      {showLineNumbers && (
-                        <span className="absolute left-2 text-gray-600 select-none w-6 text-right">{lineNumber}</span>
+                      {renderNumbers && (
+                        <span className="absolute left-0 text-jojanes-white-muted/40 select-none w-8 text-right pr-3 border-r border-jojanes-border/30 text-xs inline-block h-full pt-0.5">
+                          {lineNumber}
+                        </span>
                       )}
                       <span
                         dangerouslySetInnerHTML={{ __html: highlightCode(line, language) || "&nbsp;" }}
-                        className={isHighlighted ? "text-jojanes-white" : "text-gray-300"}
+                        className={isHighlighted ? "text-jojanes-white ml-2" : "text-gray-300 ml-2"}
                       />
                     </div>
                   );
@@ -183,6 +221,32 @@ export const PortableTextComponents = {
         </figure>
       );
     },
+    table: ({ value }: any) => {
+      if (!value?.rows?.length) return null;
+      return (
+        <div className="my-10 overflow-x-auto rounded-xl border border-jojanes-border shadow-2xl">
+          <table className="w-full text-left text-sm text-jojanes-white-muted border-collapse">
+            <tbody className="divide-y divide-jojanes-border bg-jojanes-surface">
+              {value.rows.map((row: any, i: number) => (
+                <tr key={row._key || i} className="hover:bg-jojanes-white/5 transition-colors">
+                  {row.cells?.map((cell: string, j: number) =>
+                    i === 0 ? (
+                      <th key={j} className="px-6 py-4 font-bold text-jojanes-white bg-jojanes-white/5 uppercase tracking-wider text-xs">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td key={j} className="px-6 py-4 whitespace-nowrap">
+                        {cell}
+                      </td>
+                    )
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    },
   },
   block: {
     normal: ({ children }: any) => (
@@ -225,25 +289,43 @@ export const PortableTextComponents = {
         {children}
       </div>
     ),
-    ul: ({ children }: any) => (
-      <ul className="list-disc list-outside ml-6 text-jojanes-white/90 my-6 space-y-2">
-        {children}
-      </ul>
-    ),
-    ol: ({ children }: any) => (
-      <ol className="list-decimal list-outside ml-6 text-jojanes-white/90 my-6 space-y-2">
-        {children}
-      </ol>
-    ),
-    li: ({ children }: any) => (
-      <li className="text-lg leading-relaxed pl-2">{children}</li>
-    ),
     hr: () => (
       <hr className="border-t border-jojanes-border my-12 relative">
         <span className="absolute left-1/2 -translate-x-1/2 -top-3 px-3 bg-jojanes-black text-jojanes-green">
           <span className="icon-[tabler--dots] text-xl" />
         </span>
       </hr>
+    ),
+  },
+  list: {
+    bullet: ({ children }: any) => (
+      <ul className="list-disc list-outside ml-6 text-jojanes-white/90 my-6 space-y-2">
+        {children}
+      </ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className="list-decimal list-outside ml-6 text-jojanes-white/90 my-6 space-y-2">
+        {children}
+      </ol>
+    ),
+    checklist: ({ children }: any) => (
+      <ul className="list-none ml-6 text-jojanes-white/90 my-6 space-y-2">
+        {children}
+      </ul>
+    ),
+  },
+  listItem: {
+    bullet: ({ children }: any) => (
+      <li className="text-lg leading-relaxed pl-2 text-jojanes-white/90">{children}</li>
+    ),
+    number: ({ children }: any) => (
+      <li className="text-lg leading-relaxed pl-2 text-jojanes-white/90">{children}</li>
+    ),
+    checklist: ({ children }: any) => (
+      <li className="text-lg leading-relaxed pl-2 text-jojanes-white/90 flex items-start gap-2">
+        <span className="text-jojanes-green mt-1">✓</span>
+        <span>{children}</span>
+      </li>
     ),
   },
   marks: {
@@ -270,10 +352,10 @@ export const PortableTextComponents = {
         </a>
       );
     },
-    bold: ({ children }: any) => (
+    strong: ({ children }: any) => (
       <strong className="font-bold text-jojanes-white">{children}</strong>
     ),
-    italic: ({ children }: any) => (
+    em: ({ children }: any) => (
       <em className="italic text-jojanes-white/80">{children}</em>
     ),
     underline: ({ children }: any) => (
