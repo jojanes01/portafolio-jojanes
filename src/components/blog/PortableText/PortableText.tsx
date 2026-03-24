@@ -15,7 +15,7 @@ const CODE_THEME = {
 const highlightCode = (code: string, language: string) => {
   if (typeof code !== "string") return code;
 
-  let highlighted = code
+  const highlighted = code
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
@@ -62,7 +62,7 @@ const highlightCode = (code: string, language: string) => {
         newTokens.push(token);
         return;
       }
-      
+
       let lastIndex = 0;
       const regex = new RegExp(pattern.source, "gm");
       let match;
@@ -130,7 +130,7 @@ export const PortableTextComponents = {
       // Si el JSON viene con showLineNumbers en true por defecto del esquema, 
       // lo validamos. Pero para limpiar el problema lo ignoramos a menos que se desee.
       // (Aquí lo deshabilitamos forzosamente para limpiar el bloque, puedes quitar el '&& false' si quieres que el toggle de Sanity mande)
-      const renderNumbers = showLineNumbers && false; 
+      const renderNumbers = showLineNumbers && false;
 
       return (
         <div className="my-8 rounded-xl overflow-hidden border border-jojanes-border bg-[#0d1117]">
