@@ -36,7 +36,7 @@ const traits = [
 ];
 
 const quickStats = [
-  { value: "5+", label: "Years building" },
+  { value: "6+", label: "Years building" },
   { value: "20+", label: "Products shipped" },
   { value: "1M+", label: "Users served" },
 ];

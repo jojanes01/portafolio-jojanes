@@ -58,7 +58,7 @@ export const BlogHero = () => {
         </h1>
 
         <p className="text-lg sm:text-xl text-jojanes-white-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-          Artículos técnicos, tutoriales y mejores prácticas de desarrollo. 
+          Artículos técnicos, tutoriales y mejores prácticas de desarrollo.
           Comparte mi viaje como desarrollador y aprende junto conmigo.
         </p>
 
@@ -78,7 +78,7 @@ export const BlogHero = () => {
         <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto">
           {[
             { number: "50+", label: "Artículos" },
-            { number: "5+", label: "Años" },
+            { number: "6+", label: "Años" },
             { number: "10K+", label: "Lectores" },
           ].map((stat, index) => (
             <div

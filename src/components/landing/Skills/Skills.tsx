@@ -38,7 +38,7 @@ const skillsData = [
 
   /* ── Frontend ── */
   { name: "Next.js", icon: "icon-[file-icons--nextjs]", color: "#FFFFFF", category: "Frontend", tag: "Daily driver" },
-  { name: "React", icon: "icon-[mdi--react]", color: "#61DAFB", category: "Frontend", tag: "5+ years" },
+  { name: "React", icon: "icon-[mdi--react]", color: "#61DAFB", category: "Frontend", tag: "6+ years" },
   { name: "TypeScript", icon: "icon-[devicon--typescript]", color: "#3178C6", category: "Frontend", tag: "Preferred" },
   { name: "React Native", icon: "icon-[mdi--react]", color: "#61DAFB", category: "Frontend", tag: "Mobile apps" },
   { name: "Tailwind CSS", icon: "icon-[devicon--tailwindcss]", color: "#38BDF8", category: "Frontend", tag: "All projects" },

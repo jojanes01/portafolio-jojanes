@@ -10,7 +10,7 @@ export const FeaturedPost = ({ post, index = 0 }: { post: any; index?: number })
         style={{ animationDelay: `${index * 150}ms` }}
       >
         <div className="relative h-64 lg:h-auto overflow-hidden">
-          {post.mainImage ? (
+          {post.mainImage?.asset ? (
             <Image
               src={urlFor(post.mainImage).url() || ""}
               alt={post.title}
@@ -54,7 +54,7 @@ export const FeaturedPost = ({ post, index = 0 }: { post: any; index?: number })
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-jojanes-border">
             <div className="flex items-center gap-2">
               <Image
-                src={post.author?.image ? urlFor(post.author.image).url() : ""}
+                src={post.author?.image?.asset ? urlFor(post.author.image).url() : ""}
                 alt={post.author?.name || "Author"}
                 width={36}
                 height={36}

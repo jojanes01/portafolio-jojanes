@@ -26,7 +26,7 @@ export const PostCard = ({ post, index = 0 }: { post: any; index?: number }) => 
     >
       <div className={`relative h-full bg-jojanes-surface border border-jojanes-border rounded-2xl overflow-hidden transition-all duration-500 ${isHovered ? "border-jojanes-green/50 shadow-[0_0_40px_rgba(42,233,141,0.15)]" : "hover:border-jojanes-green/30 hover:shadow-[0_0_20px_rgba(42,233,141,0.08)]"}`}>
         <div className="relative h-48 overflow-hidden">
-          {!imageError && post.mainImage ? (
+          {!imageError && post.mainImage?.asset ? (
             <Image
               src={urlFor(post.mainImage).url() || ""}
               alt={post.title}
@@ -78,7 +78,7 @@ export const PostCard = ({ post, index = 0 }: { post: any; index?: number }) => 
             <div className="flex items-center gap-2">
               <AvatarChip
                 name={post.author?.name || "Author"}
-                src={post.author?.image ? urlFor(post.author.image).url() : ""}
+                src={post.author?.image?.asset ? urlFor(post.author.image).url() : ""}
                 alt={post.author?.name || "Author"}
                 description={post.author?.bio || ""}
                 type="blog"

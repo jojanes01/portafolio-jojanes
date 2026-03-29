@@ -7,7 +7,7 @@ export const Hero = async () => {
   const t = await getTranslations("Hero");
 
   const stats = [
-    { value: "5+", label: "Years of Experience" },
+    { value: "6+", label: "Years of Experience" },
     { value: "1M+", label: "Monthly Users Reached" },
     { value: "20+", label: "Projects Delivered" },
     { value: "3", label: "Countries Worked In" },

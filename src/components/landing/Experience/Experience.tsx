@@ -139,7 +139,7 @@ export const Experience = () => {
           </span>
         </h2>
         <p className="text-[#4B5553] text-sm sm:text-base mt-3 max-w-xl leading-7">
-          5+ years across enterprise, startups, and freelance — from Telefónica&apos;s 1M-user platforms to independent product launches.
+          6+ years across enterprise, startups, and freelance — from Telefónica&apos;s 1M-user platforms to independent product launches.
         </p>
       </div>
 
